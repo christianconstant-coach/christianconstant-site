@@ -7,5 +7,5 @@
     "directory": "./public",
     "binding": "ASSETS"
   },
-  "observability": { "enabled": true }, "keep_vars": true, "vars": { "ANTHROPIC_WORKSPACE_ID": "wrkspc_019hB8kqWp9QgPdx7gvuSuRo" }
+  "observability": { "enabled": true }, "keep_vars": true, "vars": { "ANTHROPIC_WORKSPACE_ID": "wrkspc_019hB8kqWp9QgPdx7gvuSuRo", "ALLOWED_ORIGIN": "https://christian-constant.com" }
 }
