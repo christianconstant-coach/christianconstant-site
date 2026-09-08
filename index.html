@@ -69,7 +69,7 @@
 
   /* ---------- top bar ---------- */
   header.top {
-    display: flex; align-items: baseline; justify-content: space-between;
+    display: flex; align-items: flex-start; justify-content: space-between;
     padding: 1.6rem 0 0;
   }
   .name {
@@ -78,7 +78,7 @@
     font-weight: 500;
     letter-spacing: 0.005em;
   }
-  .langs { display: flex; gap: 0.15rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; }
+  .brand { display: flex; flex-direction: column; gap: 0.3rem; } .tagline { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); } .langs { display: flex; gap: 0.15rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; margin-top: 0.15rem; }
   .langs button {
     all: unset; cursor: pointer; padding: 0.25rem 0.45rem; color: var(--muted); border-radius: 2px;
   }
@@ -236,7 +236,7 @@
 </style>
 
 <header class="top wrap">
-  <a class="name" href="#" data-i18n="name">Christian Constant</a>
+  <div class="brand"><a class="name" href="#" data-i18n="name">Christian Constant</a><span class="tagline" data-i18n="tagline">Tailor-Made Leadership Coaching</span></div>
   <nav class="langs" aria-label="Language">
     <button type="button" data-lang="en" aria-pressed="true">EN</button>
     <button type="button" data-lang="de" aria-pressed="false">DE</button>
@@ -292,7 +292,7 @@
   /* ---------------- strings ---------------- */
   var T = {
     en: {
-      name: "Christian Constant",
+      name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
       hero: "You have made it here. That makes you special already.",
       sub1: "English · Français · Deutsch", sub2: "Remote or in person", sub3: "By referral or invitation",
       placeholder: "Ask anything about how Christian works…",
@@ -309,7 +309,7 @@
       privacyBody: "<p>This site has no accounts, no cookies and no analytics.</p><p>The conversation on this page is answered by an AI assistant. What you type is sent to Anthropic (USA) to generate the reply and is not stored by this site afterwards. Please don't share anything confidential here — that is what the conversation with Christian is for.</p><p>If you email Christian, your message is kept as long as needed to reply. Questions about your data: " + EMAIL + ".</p>"
     },
     de: {
-      name: "Christian Constant",
+      name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
       hero: "Sie haben es bis hierher geschafft. Das allein macht Sie schon besonders.",
       sub1: "English · Français · Deutsch", sub2: "Remote oder persönlich", sub3: "Auf Empfehlung oder Einladung",
       placeholder: "Fragen Sie, wie Christian arbeitet …",
@@ -326,7 +326,7 @@
       privacyBody: "<p>Diese Seite hat keine Konten, keine Cookies und keine Analyse-Tools.</p><p>Das Gespräch auf dieser Seite beantwortet ein KI-Assistent. Was Sie eingeben, wird zur Erzeugung der Antwort an Anthropic (USA) übermittelt und von dieser Seite danach nicht gespeichert. Bitte teilen Sie hier nichts Vertrauliches – dafür ist das Gespräch mit Christian da.</p><p>Wenn Sie Christian eine E-Mail schreiben, wird Ihre Nachricht so lange aufbewahrt, wie es für die Antwort nötig ist. Fragen zu Ihren Daten: " + EMAIL + ".</p>"
     },
     fr: {
-      name: "Christian Constant",
+      name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
       hero: "Vous êtes arrivé jusqu'ici. Cela fait déjà de vous quelqu'un de spécial.",
       sub1: "English · Français · Deutsch", sub2: "À distance ou en personne", sub3: "Sur recommandation ou invitation",
       placeholder: "Demandez comment Christian travaille…",
