@@ -123,8 +123,8 @@
     text-transform: uppercase;
     color: var(--muted);
   }
-  .hero .sub { display: flex; flex-wrap: wrap; row-gap: 0.2em; } .hero .sub span { white-space: nowrap; }
-  .hero .sub span + span::before { content: "·"; margin: 0 0.6em; }
+  .hero .sub { display: flex; flex-direction: column; row-gap: 0.35em; }
+  .hero .sub span { white-space: nowrap; }
 
   /* ---------- conversation ---------- */
   main { flex: 1; }
@@ -249,7 +249,7 @@
     <img class="portrait" src="photo.jpg" width="1000" height="1200" alt="Christian Constant, mid-conversation, under a stone arcade" fetchpriority="high">
     <div class="text">
       <h1 data-i18n="hero">You have made it here. That makes you special already.</h1>
-      <p class="sub"><span data-i18n="sub1">Zurich</span><span data-i18n="sub2">English · Deutsch · Français</span><span data-i18n="sub3">By referral</span></p>
+      <p class="sub"><span data-i18n="sub1">English · Français · Deutsch</span><span data-i18n="sub2">Remote or in person</span><span data-i18n="sub3">By referral or invitation</span></p>
     </div>
   </section>
 
@@ -294,7 +294,7 @@
     en: {
       name: "Christian Constant",
       hero: "You have made it here. That makes you special already.",
-      sub1: "Zurich", sub2: "English · Deutsch · Français", sub3: "By referral",
+      sub1: "English · Français · Deutsch", sub2: "Remote or in person", sub3: "By referral or invitation",
       placeholder: "Ask anything about how Christian works…",
       askLabel: "Your question", send: "Send",
       note: "This is an assistant, not Christian. The real conversation happens with him.",
@@ -311,7 +311,7 @@
     de: {
       name: "Christian Constant",
       hero: "Sie haben es bis hierher geschafft. Das allein macht Sie schon besonders.",
-      sub1: "Zürich", sub2: "Deutsch · English · Français", sub3: "Auf Empfehlung",
+      sub1: "English · Français · Deutsch", sub2: "Remote oder persönlich", sub3: "Auf Empfehlung oder Einladung",
       placeholder: "Fragen Sie, wie Christian arbeitet …",
       askLabel: "Ihre Frage", send: "Senden",
       note: "Das ist ein Assistent, nicht Christian. Das echte Gespräch findet mit ihm statt.",
@@ -328,7 +328,7 @@
     fr: {
       name: "Christian Constant",
       hero: "Vous êtes arrivé jusqu'ici. Cela fait déjà de vous quelqu'un de spécial.",
-      sub1: "Zurich", sub2: "Français · English · Deutsch", sub3: "Sur recommandation",
+      sub1: "English · Français · Deutsch", sub2: "À distance ou en personne", sub3: "Sur recommandation ou invitation",
       placeholder: "Demandez comment Christian travaille…",
       askLabel: "Votre question", send: "Envoyer",
       note: "Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.",
