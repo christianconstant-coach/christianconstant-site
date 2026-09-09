@@ -436,7 +436,7 @@
   function paragraphs(text) {
     return text.split(/\n{2,}/).map(function (p) {
       var safe = p.replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; });
-      safe = safe.replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<a href="mailto:$1">$1</a>');
+      safe = safe.replace(/([\w.+-]+@[\w-]+(?:\.[\w-]+)*\.[A-Za-z]{2,})/g, '<a href="mailto:$1">$1</a>');
       return "<p>" + safe.replace(/\n/g, "<br>") + "</p>";
     }).join("");
   }
