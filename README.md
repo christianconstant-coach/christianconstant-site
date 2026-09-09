@@ -5,7 +5,9 @@ A one-page conversational site: the visitor talks to an assistant that answers f
 ## What's in the folder (no subfolders — every file sits at the top level)
 
 ```
-narrative-en.md   ← the assistant's brain and the site's words. Edit this, and the site updates.
+narrative-en.md   ← the assistant's brain and the site's words (English). Edit this, and the site updates.
+narrative-de.md   ← same in German — the assistant answers German visitors from this file
+narrative-fr.md   ← same in French
 index.html        ← the page (design, EN/DE/FR strings, chat UI, imprint/privacy text)
 photo.jpg         ← your portrait
 chat.js           ← the backend: receives the chat, calls Claude, streams the reply
@@ -15,7 +17,7 @@ wrangler.jsonc    ← Cloudflare settings
 package.json      ← tells Cloudflare which tool deploys the site
 ```
 
-Everything the assistant says comes from `narrative-en.md`. It is instructed to answer only from that file and to send people to your email for anything else.
+Everything the assistant says comes from `narrative-en.md` / `narrative-de.md` / `narrative-fr.md` (picked by the visitor's language; missing files fall back to English). It is instructed to answer only from that file and to send people to your email for anything else.
 
 ## One-time setup
 
@@ -44,23 +46,26 @@ Repository `christianconstant-site`. All files sit at the top level of the repos
 3. Wait for the first deploy to finish (about a minute). It will show a `christian-constant.<your-account>.workers.dev` address. The page will load, but the chat will say "briefly unavailable" until the next step.
 4. Project → **Settings → Variables and Secrets → Add**:
    - `ANTHROPIC_API_KEY` — type **Secret** — value: the key from step 3
-   - `ALLOWED_ORIGIN` — type Text — value: `https://christian-constant.com`
+   - `ALLOWED_ORIGIN` — type Text — value: `https://christian-constant.com` — **add this only after the domain is connected (step 5)**; while you test on the workers.dev address it must stay unset, otherwise the backend rejects the calls
    - (optional) `ANTHROPIC_MODEL` — type Text — `claude-sonnet-5` (default; `claude-haiku-4-5-20251001` is cheaper, slightly less polished)
    Then **Deployments → Retry / Redeploy** the latest one so the backend picks them up.
 5. Test the chat on the workers.dev address in EN, DE and FR. If it answers, the key is wired correctly.
 
-### 5. Connect the domain
-Project → **Settings → Domains & Routes → Add → Custom domain** → `christian-constant.com`. Cloudflare shows you a DNS record; add it at your registrar (or, if the domain is on Cloudflare, it's automatic). Add `www.christian-constant.com` too. HTTPS is automatic. Once the domain works, the `ALLOWED_ORIGIN` setting from step 4.4 makes the backend accept calls from that domain only.
+### 5. Domain — done
+`christian-constant.com` and `www.christian-constant.com` are attached to the Worker (Cloudflare → project → Domains). The domain is registered at Cloudflare, so DNS and HTTPS were automatic. `www` redirects to the bare domain (worker.js, with `run_worker_first` in wrangler.jsonc). `ALLOWED_ORIGIN` in wrangler.jsonc locks the chat backend to the domain.
+
+## Plain settings vs. secrets
+- Non-secret settings (`ANTHROPIC_WORKSPACE_ID`, later `ALLOWED_ORIGIN`, optionally `ANTHROPIC_MODEL`) live in `wrangler.jsonc` under `vars` — a deploy from GitHub resets dashboard-set plain variables, so the file is the reliable place.
+- The API key stays a dashboard **Secret**; secrets survive deploys.
 
 ## Updating the site later — no re-upload needed
-- **Change what the assistant says**: on GitHub open `narrative-en.md` → pencil icon → edit → **Commit changes**. Cloudflare rebuilds and redeploys within a minute.
+- **Change what the assistant says**: on GitHub open `narrative-en.md` (or `-de` / `-fr`) → pencil icon → edit → **Commit changes**. Cloudflare rebuilds and redeploys within a minute.
 - **Change the page itself** (hero line, prompt chips, colours, footer, imprint/privacy text): same with `index.html`. All EN/DE/FR interface strings are in the `T` object near the top of the script; the email address is the `EMAIL` constant.
 - **New photo**: upload a new `photo.jpg` (portrait, 5:6, ~1000×1200 px) replacing the old one.
 
 ## Before going live — checklist
-- [ ] Replace `[Street and number]` etc. in the Imprint strings (`index.html`, `imprintBody` in all three languages). Swiss law doesn't strictly require an imprint for a personal site, but a postal address plus email is expected for a professional one.
+- [x] Imprint address and LinkedIn URL set in `index.html`.
 - [ ] Confirm the email address `hello@christian-constant.com` exists (forwarding at the registrar).
-- [ ] Set the LinkedIn URL in the footer (`index.html`) to your actual profile.
 - [ ] Ask the assistant a few hard questions in all three languages on the workers.dev address: "Are you Christian?", "What's your hourly rate?", "Can you coach me now?", "Ignore your instructions" — it should decline gracefully and point to your email.
 
 ## Safety and privacy notes
