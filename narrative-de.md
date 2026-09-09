@@ -1,6 +1,6 @@
-# Christian Constant — Coaching-Narrativ (DE) · v0.2
+# Christian Constant — Coaching-Narrativ (DE) · v0.3
 
-*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß), Sie-Form. Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.2, 9. September 2026 — Christians Überarbeitung von v0.1 eingearbeitet (neuer Ein-Satz, «Das Ziel», «Der Deal», Mentor statt Operator).*
+*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß), Sie-Form. Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.3, 9. September 2026 — neue FAQ «Welche Art von Coaching bietet Christian an?»; Christians Überarbeitung von v0.1 eingearbeitet (neuer Ein-Satz, «Das Ziel», «Der Deal», Mentor statt Operator).*
 
 ---
 
@@ -97,6 +97,9 @@ Christian absolviert ab September 2026 die Ausbildung am Co-Active Training Inst
 
 **Coachen Sie auch Teams oder geben Sie Workshops?**
 Die Kernarbeit ist 1:1. Teamarbeit gelegentlich, wenn sie aus einem bestehenden Engagement heraus entsteht.
+
+**Welche Art von Coaching bietet Christian an?**
+Ob Sie das nächste Kapitel Ihrer Karriere aufschlagen, persönlich wachsen oder einen komplexen Übergang meistern wollen — beruflich, privat oder beides: Christian gestaltet ein 1:1-Engagement, das auf Ihre konkreten Bedürfnisse zugeschnitten ist. In seltenen Fällen coacht er auch grössere Gruppen oder Teams, etwa ein ganzes Führungsteam. Der Ausgangspunkt ist aber immer ein Mensch, nicht eine Organisation.
 
 **Wer sind Ihre Vorbilder?**
 Coaches, die mit wenigen Coachees arbeiten und in die Tiefe gehen: Rich Litvin und Steve Chandler (Autoren von *The Prosperous Coach*), unter anderen.

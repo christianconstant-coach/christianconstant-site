@@ -166,7 +166,7 @@
     display: flex; flex-wrap: wrap; gap: 0.5rem;
     padding: 0.6rem 1.4rem 1rem;
   }
-  .prompts button {
+  .prompts button, .followup button {
     all: unset; cursor: pointer;
     font-family: var(--body); font-size: 0.86rem;
     padding: 0.42rem 0.8rem;
@@ -174,9 +174,12 @@
     color: var(--ink-2);
     transition: border-color 120ms ease, color 120ms ease;
   }
-  .prompts button:hover { border-color: var(--accent); color: var(--ink); }
-  .prompts button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .prompts button:hover, .followup button:hover { border-color: var(--accent); color: var(--ink); }
+  .prompts button:focus-visible, .followup button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .prompts[hidden] { display: none; }
+  .followup { margin: -0.2rem 0 0.2rem 2.15rem; }
+  .followup .label { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; }
+  .followup .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
   form.ask {
     display: flex; align-items: flex-end; gap: 0.6rem;
@@ -227,11 +230,24 @@
   .legal .close { all: unset; cursor: pointer; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em; color: var(--muted); margin-top: 0.4rem; }
   .legal .close:hover { color: var(--ink); text-decoration: underline; }
 
+  /* ---------- desktop: wider stage ---------- */
+  @media (min-width: 900px) {
+    .wrap { width: min(100% - 4rem, 66rem); }
+    .hero { grid-template-columns: 1fr auto; gap: 2rem 4rem; padding: 4.5rem 0 3rem; align-items: center; }
+    .hero h1 { font-size: clamp(2.4rem, 1.4rem + 2.6vw, 3.4rem); max-width: 22ch; }
+    .hero .portrait { width: clamp(15rem, 24vw, 19rem); }
+    .thread { max-height: min(60vh, 38rem); padding: 1.8rem 2rem 0.6rem; }
+    .msg { max-width: 70ch; }
+    .prompts { padding: 0.6rem 2rem 1.2rem; }
+    form.ask { padding-left: 2rem; }
+  }
+
   @media (max-width: 480px) {
     .hero { padding: 3rem 0 2rem; }
     .thread, .prompts { padding-left: 1rem; padding-right: 1rem; }
     form.ask { padding-left: 1rem; }
     .msg { max-width: 100%; }
+    .followup { margin-left: 0; }
   }
 </style>
 
@@ -300,7 +316,8 @@
       note: "This is an assistant, not Christian. The real conversation happens with him.",
       imprint: "Imprint", privacy: "Privacy", close: "Close",
       intro: "I'm Christian's assistant — not Christian. Ask me how he works, who he works with, or what happens next. The real conversation happens with him.",
-      prompts: ["Why does Christian coach?", "Who does he work with?", "What does it cost?", "How does it start?"],
+      prompts: ["What types of coaching does Christian offer?", "Who does he work with?", "What does it cost?", "How does it start?"],
+      more: "Would you like to know more?",
       offline: "The assistant is briefly unavailable. Write to Christian directly at " + EMAIL + " — he reads and answers everything himself.",
       demoFallback: "In the live version I answer this from Christian's own words. For now, the shortest route is the real one: write to him at " + EMAIL + ".",
       imprintTitle: "Imprint",
@@ -317,7 +334,8 @@
       note: "Das ist ein Assistent, nicht Christian. Das echte Gespräch findet mit ihm statt.",
       imprint: "Impressum", privacy: "Datenschutz", close: "Schliessen",
       intro: "Ich bin Christians Assistent – nicht Christian. Fragen Sie mich, wie er arbeitet, mit wem, und wie es weitergeht. Das echte Gespräch findet mit ihm statt.",
-      prompts: ["Warum coacht Christian?", "Mit wem arbeitet er?", "Was kostet das?", "Wie fängt es an?"],
+      prompts: ["Welche Art von Coaching bietet Christian an?", "Mit wem arbeitet er?", "Was kostet das?", "Wie fängt es an?"],
+      more: "Möchten Sie mehr wissen?",
       offline: "Der Assistent ist kurz nicht erreichbar. Schreiben Sie Christian direkt: " + EMAIL + " – er liest und beantwortet alles selbst.",
       demoFallback: "In der Live-Version beantworte ich das aus Christians eigenen Worten. Bis dahin ist der kürzeste Weg der echte: schreiben Sie ihm an " + EMAIL + ".",
       imprintTitle: "Impressum",
@@ -334,7 +352,8 @@
       note: "Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.",
       imprint: "Mentions légales", privacy: "Confidentialité", close: "Fermer",
       intro: "Je suis l'assistant de Christian – pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.",
-      prompts: ["Pourquoi Christian coache-t-il ?", "Avec qui travaille-t-il ?", "Combien ça coûte ?", "Comment ça commence ?"],
+      prompts: ["Quels types de coaching Christian propose-t-il ?", "Avec qui travaille-t-il ?", "Combien ça coûte ?", "Comment ça commence ?"],
+      more: "Souhaitez-vous en savoir plus ?",
       offline: "L'assistant est momentanément indisponible. Écrivez directement à Christian : " + EMAIL + " – il lit et répond à tout lui-même.",
       demoFallback: "Dans la version en ligne, je réponds à cela avec les mots de Christian. En attendant, le chemin le plus court est le vrai : écrivez-lui à " + EMAIL + ".",
       imprintTitle: "Mentions légales",
@@ -347,6 +366,7 @@
   /* ---------------- demo answers (preview only; the live site answers from the narrative) ---------------- */
   var DEMO_ANSWERS = {
     en: [
+      { k: /types? of|kind of|what .*offer|formats?|group|team/i, a: "Whether you are looking to unlock your next career chapter, grow personally or manage a complex transition — work, life or both — Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation." },
       { k: /why|coach\?|reason|warum|pourquoi/i, a: "For twenty-six years Christian has been the one in the room who had to decide — at Vodafone, at a Silicon Valley start-up that grew from a $150M to a $2.6BN valuation while he was on its leadership team, and most recently running a large consumer business in Switzerland with fifty people and several hundred thousand paying customers.\n\nAlong the way he noticed that the hardest problems were never really about strategy or money. They were about a person — often himself — stuck in a story about what was possible. And that almost nobody at the top has someone who will tell them the truth. He coaches to be that person for a small number of people." },
       { k: /who|whom|work with|client|kind of people/i, a: "People who carry real responsibility: CEOs, general managers, founders, executives running a P&L, a country, a product, a team of hundreds — usually at an inflection point. A bigger role, a company that has outgrown its playbook, a decision they keep postponing, a success that somehow doesn't feel like one.\n\nHe works in English, German and French, from Zurich, with people anywhere. And with very few at a time — not as a line, but because the work doesn't scale and he doesn't want it to." },
       { k: /cost|price|fee|charge|how much|expensive|pay|rate/i, a: "There is no price list. It starts with a conversation — a powerful 90-minute coaching conversation, no charge, no pitch. If both sides want to continue, Christian proposes a single fee for the whole engagement, usually six to twelve months. You are not buying hours; you are buying access to someone who is thinking about your situation between the sessions as well as during them." },
@@ -362,6 +382,7 @@
       { k: /refer|recommend someone|introduce/i, a: "Yes — that's how this works. Write to Christian with a line about the person and why you thought of them: " + EMAIL + "." }
     ],
     de: [
+      { k: /welche art|arten|angebot|bietet|format|gruppe|team/i, a: "Ob Sie das nächste Kapitel Ihrer Karriere aufschlagen, persönlich wachsen oder einen komplexen Übergang meistern wollen – beruflich, privat oder beides: Christian gestaltet ein 1:1-Engagement, das auf Ihre konkreten Bedürfnisse zugeschnitten ist. In seltenen Fällen coacht er auch grössere Gruppen oder Teams, etwa ein ganzes Führungsteam. Der Ausgangspunkt ist aber immer ein Mensch, nicht eine Organisation." },
       { k: /warum|wieso|grund|why/i, a: "Sechsundzwanzig Jahre lang war Christian derjenige im Raum, der entscheiden musste – bei Vodafone, bei einem Silicon-Valley-Start-up, das während seiner Zeit im Führungsteam von 150 Mio. auf 2,6 Mrd. Dollar Bewertung wuchs, und zuletzt an der Spitze eines grossen Konsumentengeschäfts in der Schweiz mit fünfzig Mitarbeitenden und mehreren hunderttausend zahlenden Kunden.\n\nUnterwegs hat er gemerkt: Die schwierigsten Probleme waren nie wirklich Strategie oder Geld. Es war immer ein Mensch – oft er selbst – gefangen in einer Geschichte darüber, was möglich ist. Und dass fast niemand ganz oben jemanden hat, der die Wahrheit sagt. Er coacht, um dieser Mensch zu sein – für wenige." },
       { k: /wem|wen|kunden|klienten|arbeitet/i, a: "Menschen mit echter Verantwortung: CEOs, General Manager, Gründerinnen, Führungskräfte mit einer P&L, einem Land, einem Produkt, einem Team von Hunderten – meist an einem Wendepunkt. Eine grössere Rolle, ein Unternehmen, das seinem Playbook entwachsen ist, eine Entscheidung, die man immer wieder vertagt, ein Erfolg, der sich nicht wie einer anfühlt.\n\nEr arbeitet auf Deutsch, Englisch und Französisch, von Zürich aus, mit Menschen überall. Und mit sehr wenigen gleichzeitig – weil die Arbeit nicht skaliert und er das auch nicht will." },
       { k: /kost|preis|honorar|teuer|bezahl|tarif/i, a: "Es gibt keine Preisliste. Es beginnt mit einem Gespräch – einem kraftvollen 90-minütigen Coaching-Gespräch, kostenlos, ohne Verkaufsabsicht. Wenn beide weitermachen wollen, schlägt Christian ein Honorar für das gesamte Engagement vor, meist sechs bis zwölf Monate. Sie kaufen keine Stunden, sondern den Zugang zu jemandem, der auch zwischen den Sitzungen über Ihre Situation nachdenkt." },
@@ -377,6 +398,7 @@
       { k: /empfehl|weiterempf|vorstellen/i, a: "Ja – genau so funktioniert das. Schreiben Sie Christian eine Zeile über die Person und warum Sie an sie gedacht haben: " + EMAIL + "." }
     ],
     fr: [
+      { k: /quels? types?|genre|propose|format|groupe|équipe|equipe/i, a: "Que vous souhaitiez ouvrir le prochain chapitre de votre carrière, grandir sur le plan personnel ou traverser une transition complexe – professionnelle, personnelle ou les deux – Christian conçoit un accompagnement individuel, sur mesure, adapté à vos besoins précis. Plus rarement, il coache aussi des groupes ou des équipes, par exemple une équipe de direction au complet. Le point de départ reste toujours une personne, jamais une organisation." },
       { k: /pourquoi|raison/i, a: "Pendant vingt-six ans, Christian a été celui qui, dans la pièce, devait décider – chez Vodafone, dans une start-up de la Silicon Valley passée de 150 M$ à 2,6 Md$ de valorisation pendant qu'il siégeait à sa direction, et, plus récemment, à la tête d'une grande activité grand public en Suisse, avec cinquante personnes et plusieurs centaines de milliers de clients payants.\n\nEn chemin, il a remarqué que les problèmes les plus durs n'étaient jamais vraiment de stratégie ou d'argent. C'était toujours une personne – souvent lui-même – enfermée dans une histoire sur ce qui est possible. Et que presque personne, tout en haut, n'a quelqu'un pour lui dire la vérité. Il coache pour être cette personne – pour quelques-uns." },
       { k: /avec qui|clients|qui travaille|quel genre/i, a: "Des personnes qui portent une vraie responsabilité : CEO, directeurs généraux, fondateurs, dirigeants en charge d'un P&L, d'un pays, d'un produit, d'une équipe de centaines de personnes – généralement à un point d'inflexion. Un rôle plus grand, une entreprise qui a dépassé son manuel, une décision sans cesse repoussée, un succès qui, curieusement, n'en a pas le goût.\n\nIl travaille en français, anglais et allemand, depuis Zurich, avec des personnes partout. Et avec très peu à la fois – parce que ce travail ne passe pas à l'échelle, et qu'il n'y tient pas." },
       { k: /coût|cout|prix|tarif|combien|honoraire|cher|payer/i, a: "Il n'y a pas de grille tarifaire. Cela commence par une conversation – une conversation de coaching puissante de 90 minutes, sans frais, sans argumentaire. Si les deux parties veulent continuer, Christian propose un honoraire unique pour l'ensemble de l'accompagnement, en général six à douze mois. Vous n'achetez pas des heures ; vous achetez l'accès à quelqu'un qui pense à votre situation entre les séances autant que pendant." },
@@ -397,6 +419,7 @@
   var lang = "en";
   var history = [];        // {role, content} for the live API
   var busy = false;
+  var asked = [];          // indices of standard questions already clicked
 
   var $ = function (s) { return document.querySelector(s); };
   var thread = $("#thread"), prompts = $("#prompts"), form = $("#ask"), q = $("#q"), send = $("#send");
@@ -425,12 +448,31 @@
 
   function renderPrompts() {
     prompts.innerHTML = "";
-    T[lang].prompts.forEach(function (p) {
+    T[lang].prompts.forEach(function (p, i) {
       var b = document.createElement("button"); b.type = "button"; b.textContent = p;
-      b.addEventListener("click", function () { submit(p); });
+      b.addEventListener("click", function () { submit(p, i); });
       prompts.appendChild(b);
     });
     prompts.hidden = history.length > 0;
+  }
+
+  // After an answer: offer the standard questions not yet asked.
+  function addFollowups() {
+    var old = thread.querySelector(".followup"); if (old) old.remove();
+    var left = [];
+    T[lang].prompts.forEach(function (p, i) { if (asked.indexOf(i) < 0) left.push({ p: p, i: i }); });
+    if (!left.length) return;
+    var box = document.createElement("div"); box.className = "followup";
+    var label = document.createElement("p"); label.className = "label"; label.textContent = T[lang].more;
+    var chips = document.createElement("div"); chips.className = "chips";
+    left.forEach(function (x) {
+      var b = document.createElement("button"); b.type = "button"; b.textContent = x.p;
+      b.addEventListener("click", function () { submit(x.p, x.i); });
+      chips.appendChild(b);
+    });
+    box.appendChild(label); box.appendChild(chips);
+    thread.appendChild(box);
+    thread.scrollTop = thread.scrollHeight;
   }
 
   function paragraphs(text) {
@@ -476,9 +518,11 @@
 
   function setBusy(b) { busy = b; send.disabled = b || !q.value.trim(); q.disabled = b; }
 
-  function submit(text) {
+  function submit(text, promptIndex) {
     text = (text || "").trim();
     if (!text || busy) return;
+    if (typeof promptIndex === "number" && asked.indexOf(promptIndex) < 0) asked.push(promptIndex);
+    var old = thread.querySelector(".followup"); if (old) old.remove();
     addMsg("user", text);
     history.push({ role: "user", content: text });
     prompts.hidden = true;
@@ -490,7 +534,7 @@
     if (DEMO) {
       var a = demoAnswer(text);
       setTimeout(function () {
-        typeInto(body, a, function () { history.push({ role: "assistant", content: a }); setBusy(false); q.focus(); });
+        typeInto(body, a, function () { history.push({ role: "assistant", content: a }); addFollowups(); setBusy(false); q.focus(); });
       }, 350);
       return;
     }
@@ -507,6 +551,7 @@
           if (r.done) {
             body.innerHTML = paragraphs(acc);
             history.push({ role: "assistant", content: acc });
+            addFollowups();
             setBusy(false); q.focus();
             return;
           }

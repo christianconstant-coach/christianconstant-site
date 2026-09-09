@@ -1,6 +1,6 @@
-# Christian Constant — Narratif de coaching (FR) · v0.2
+# Christian Constant — Narratif de coaching (FR) · v0.3
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.2, 9 septembre 2026 — relecture de Christian intégrée (nouvelle phrase d'accroche, « Le but », « Le deal », mentor plutôt qu'opérateur).*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.3, 9 septembre 2026 — nouvelle FAQ « Quels types de coaching Christian propose-t-il ? » ; relecture de Christian intégrée (nouvelle phrase d'accroche, « Le but », « Le deal », mentor plutôt qu'opérateur).*
 
 ---
 
@@ -97,6 +97,9 @@ Christian suit dès septembre 2026 la formation du renommé Co-Active Training I
 
 **Coachez-vous des équipes ou animez-vous des ateliers ?**
 Le cœur du travail est en tête-à-tête. Du travail d'équipe occasionnellement, sur invitation, quand il découle d'un accompagnement existant.
+
+**Quels types de coaching Christian propose-t-il ?**
+Que vous souhaitiez ouvrir le prochain chapitre de votre carrière, grandir sur le plan personnel ou traverser une transition complexe — professionnelle, personnelle ou les deux — Christian conçoit un accompagnement individuel, sur mesure, adapté à vos besoins précis. Plus rarement, il coache aussi des groupes ou des équipes, par exemple une équipe de direction au complet. Le point de départ reste toujours une personne, jamais une organisation.
 
 **Qui sont vos modèles ?**
 Des coaches qui travaillent avec peu de clients, et qui vont en profondeur : Rich Litvin et Steve Chandler, entre autres.

@@ -1,6 +1,6 @@
-# Christian Constant — Coaching Narrative (EN) · v0.3
+# Christian Constant — Coaching Narrative (EN) · v0.4
 
-*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.3, 9 Sep 2026 — Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
+*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.4, 9 Sep 2026 — new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
 
 ---
 
@@ -97,6 +97,9 @@ Christian is training with the Co-Active Training Institute (ICF-accredited) fro
 
 **Do you coach teams or run workshops?**
 The core work is one-to-one. Team work occasionally, by invitation, when it grows out of an existing engagement.
+
+**What types of coaching does Christian offer?**
+Whether you are looking to unlock your next career chapter, grow personally or manage a complex transition — work, life or both — Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation.
 
 **Who are your role models?**
 Coaches who work with few clients, and go deep: Rich Litvin and Steve Chandler, among others.
