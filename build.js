@@ -1,6 +1,6 @@
 // Build script — run with `node build.js` (Cloudflare runs it automatically on every deploy).
 // 1. Turns narrative-en.md / narrative-de.md / narrative-fr.md into knowledge.js (the assistant's knowledge per language).
-// 2. Wraps index.html into a complete page at public/index.html and copies photo.jpg next to it.
+// 2. Wraps index.html into a complete page at public/index.html and copies photo.jpg / photo-2.jpg next to it.
 
 const fs = require("fs");
 const path = require("path");
@@ -41,9 +41,11 @@ const live = src.replace("__DEMO__", "false");
 const split = live.indexOf("<header");            // everything before <header> is head content (title, fonts, styles)
 write("public/index.html", head + live.slice(0, split) + "</head>\n<body>\n" + live.slice(split) + "\n</body>\n</html>\n");
 fs.copyFileSync(path.join(root, "photo.jpg"), path.join(root, "public/photo.jpg"));
+if (fs.existsSync(path.join(root, "photo-2.jpg"))) fs.copyFileSync(path.join(root, "photo-2.jpg"), path.join(root, "public/photo-2.jpg"));
 
 // Preview copy for the Claude artifact (demo answers on, photo inlined). Not used by the deployed site.
 const photoUri = "data:image/jpeg;base64," + fs.readFileSync(path.join(root, "photo.jpg")).toString("base64");
-write("preview/index.html", src.replace("__DEMO__", "true").replace('src="photo.jpg"', 'src="' + photoUri + '"'));
+const photo2Uri = fs.existsSync(path.join(root, "photo-2.jpg")) ? "data:image/jpeg;base64," + fs.readFileSync(path.join(root, "photo-2.jpg")).toString("base64") : "photo-2.jpg";
+write("preview/index.html", src.replace("__DEMO__", "true").replace('src="photo.jpg"', 'src="' + photoUri + '"').replace('src="photo-2.jpg"', 'src="' + photo2Uri + '"'));
 
 console.log("built: knowledge.js (" + Object.keys(KN).join(", ") + "), public/index.html, public/photo.jpg, preview/index.html");

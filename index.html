@@ -96,10 +96,16 @@
   }
   .hero .text { min-width: 0; }
   .hero .portrait {
-    width: 8.5rem; height: auto; aspect-ratio: 5 / 6; object-fit: cover;
-    border-radius: 6px; display: block;
+    width: 8.5rem; aspect-ratio: 5 / 6;
+    border-radius: 6px; display: block; overflow: hidden; position: relative;
     background: var(--user-bg);
   }
+  .hero .portrait img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;
+    opacity: 0; transition: opacity 1s ease;
+  }
+  .hero .portrait img.is-on { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { .hero .portrait img { transition: none; } }
   @media (min-width: 640px) {
     .hero { grid-template-columns: 1fr auto; padding-top: 4rem; }
     .hero .portrait { width: clamp(12rem, 30vw, 15rem); order: 2; }
@@ -262,7 +268,10 @@
 
 <main class="wrap">
   <section class="hero">
-    <img class="portrait" src="photo.jpg" width="1000" height="1200" alt="Christian Constant, mid-conversation, under a stone arcade" fetchpriority="high">
+    <div class="portrait" id="portrait">
+      <img class="is-on" src="photo.jpg" width="1000" height="1200" alt="Christian Constant, mid-conversation, under a stone arcade" fetchpriority="high">
+      <img src="photo-2.jpg" width="1000" height="1200" alt="Christian Constant racing a road bike, in the aero position" fetchpriority="low">
+    </div>
     <div class="text">
       <h1 data-i18n="hero">You have made it here. That makes you special already.</h1>
       <p class="sub"><span data-i18n="sub1">English · Français · Deutsch</span><span data-i18n="sub2">Remote or in person</span><span data-i18n="sub3">By referral or invitation</span></p>
@@ -569,6 +578,19 @@
       setBusy(false);
     });
   }
+
+  /* ---------------- portrait rotation (every 5 s, paused while the assistant is answering) ---------------- */
+  (function () {
+    var imgs = document.querySelectorAll("#portrait img");
+    if (imgs.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var cur = 0;
+    setInterval(function () {
+      if (busy || document.hidden) return;
+      imgs[cur].classList.remove("is-on");
+      cur = (cur + 1) % imgs.length;
+      imgs[cur].classList.add("is-on");
+    }, 5000);
+  })();
 
   /* ---------------- wiring ---------------- */
   document.querySelectorAll(".langs button").forEach(function (b) {

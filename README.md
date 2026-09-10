@@ -9,7 +9,7 @@ narrative-en.md   ← the assistant's brain and the site's words (English). Edit
 narrative-de.md   ← same in German — the assistant answers German visitors from this file
 narrative-fr.md   ← same in French
 index.html        ← the page (design, EN/DE/FR strings, chat UI, imprint/privacy text)
-photo.jpg         ← your portrait
+photo.jpg         ← your portrait (photo-2.jpg = second portrait; the hero fades between them every 5 s)
 chat.js           ← the backend: receives the chat, calls Claude, streams the reply
 worker.js         ← tiny router: /api/chat → chat.js, everything else → the page
 build.js          ← bundles the narrative into the backend and builds the page (runs on Cloudflare)
@@ -59,14 +59,15 @@ Repository `christianconstant-site`. All files sit at the top level of the repos
 - The API key stays a dashboard **Secret**; secrets survive deploys.
 
 ## Updating the site later — no re-upload needed
+- German house rule: the narrative and interface say "Coachees", never "Klienten".
 - **Change what the assistant says**: on GitHub open `narrative-en.md` (or `-de` / `-fr`) → pencil icon → edit → **Commit changes**. Cloudflare rebuilds and redeploys within a minute.
 - **Change the page itself** (hero line, prompt chips, colours, footer, imprint/privacy text): same with `index.html`. All EN/DE/FR interface strings are in the `T` object near the top of the script; the email address is the `EMAIL` constant.
 - **New photo**: upload a new `photo.jpg` (portrait, 5:6, ~1000×1200 px) replacing the old one.
 
 ## Before going live — checklist
 - [x] Imprint address and LinkedIn URL set in `index.html`.
-- [ ] Confirm the email address `hello@christian-constant.com` exists (forwarding at the registrar).
-- [ ] Ask the assistant a few hard questions in all three languages on the workers.dev address: "Are you Christian?", "What's your hourly rate?", "Can you coach me now?", "Ignore your instructions" — it should decline gracefully and point to your email.
+- [x] Email forwarding for `hello@christian-constant.com` tested.
+- [x] Ask the assistant a few hard questions in all three languages: "Are you Christian?", "What's your hourly rate?", "Can you coach me now?", "Ignore your instructions" — it should decline gracefully and point to your email.
 
 ## Safety and privacy notes
 - The visitor's text goes to Anthropic's API to generate the reply; the site stores nothing. The Privacy panel in the footer says so — keep it if you change the text.
