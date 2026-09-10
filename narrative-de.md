@@ -1,6 +1,6 @@
-# Christian Constant — Coaching-Narrativ (DE) · v0.3
+# Christian Constant — Coaching-Narrativ (DE) · v0.4
 
-*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß), Sie-Form. Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.3, 9. September 2026 — neue FAQ «Welche Art von Coaching bietet Christian an?»; Christians Überarbeitung von v0.1 eingearbeitet (neuer Ein-Satz, «Das Ziel», «Der Deal», Mentor statt Operator).*
+*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß), Sie-Form. Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.4, 9. September 2026 — FAQs zu Vertraulichkeit und zu Coachees ausserhalb der Wirtschaft; neue FAQ «Welche Art von Coaching bietet Christian an?»; Christians Überarbeitung von v0.1 eingearbeitet (neuer Ein-Satz, «Das Ziel», «Der Deal», Mentor statt Operator).*
 
 ---
 
@@ -100,6 +100,12 @@ Die Kernarbeit ist 1:1. Teamarbeit gelegentlich, wenn sie aus einem bestehenden 
 
 **Welche Art von Coaching bietet Christian an?**
 Ob Sie das nächste Kapitel Ihrer Karriere aufschlagen, persönlich wachsen oder einen komplexen Übergang meistern wollen — beruflich, privat oder beides: Christian gestaltet ein 1:1-Engagement, das auf Ihre konkreten Bedürfnisse zugeschnitten ist. In seltenen Fällen coacht er auch grössere Gruppen oder Teams, etwa ein ganzes Führungsteam. Der Ausgangspunkt ist aber immer ein Mensch, nicht eine Organisation.
+
+**Wie vertraulich ist das Coaching?**
+Absolut vertraulich. Christian pflegt absolute Diskretion und hält zwischen seinen Coachees strikte Chinese Walls — nichts wandert von einem Engagement in ein anderes. Die Gespräche werden transkribiert; das Transkript gehört ausschliesslich Christian und dem Coachee und wird unter keinen Umständen an Dritte weitergegeben.
+
+**Coacht Christian nur Menschen aus der Wirtschaft? Was ist mit Politikerinnen, Sportlern, Kunstschaffenden?**
+Nein — die Unternehmenswelt ist seine Herkunft, keine Grenze. Christian arbeitet auch mit Menschen ausserhalb davon: Politikerinnen und Politiker, Sportlerinnen und Sportler, Kunstschaffende, alle, die ein anspruchsvolles Ziel verfolgen. Die Mechanismen im Coaching — Sein, sich neu erfinden, die Perspektive wechseln, erkennen, was einen zurückhält — sind universell und gelten für jeden Menschen, der auf etwas hinarbeitet, das ihm wichtig ist.
 
 **Wer sind Ihre Vorbilder?**
 Coaches, die mit wenigen Coachees arbeiten und in die Tiefe gehen: Rich Litvin und Steve Chandler (Autoren von *The Prosperous Coach*), unter anderen.

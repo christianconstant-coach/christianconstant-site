@@ -1,6 +1,6 @@
-# Christian Constant — Narratif de coaching (FR) · v0.3
+# Christian Constant — Narratif de coaching (FR) · v0.4
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.3, 9 septembre 2026 — nouvelle FAQ « Quels types de coaching Christian propose-t-il ? » ; relecture de Christian intégrée (nouvelle phrase d'accroche, « Le but », « Le deal », mentor plutôt qu'opérateur).*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.4, 9 septembre 2026 — FAQ sur la confidentialité et sur les clients hors entreprise ; nouvelle FAQ « Quels types de coaching Christian propose-t-il ? » ; relecture de Christian intégrée (nouvelle phrase d'accroche, « Le but », « Le deal », mentor plutôt qu'opérateur).*
 
 ---
 
@@ -100,6 +100,12 @@ Le cœur du travail est en tête-à-tête. Du travail d'équipe occasionnellemen
 
 **Quels types de coaching Christian propose-t-il ?**
 Que vous souhaitiez ouvrir le prochain chapitre de votre carrière, grandir sur le plan personnel ou traverser une transition complexe — professionnelle, personnelle ou les deux — Christian conçoit un accompagnement individuel, sur mesure, adapté à vos besoins précis. Plus rarement, il coache aussi des groupes ou des équipes, par exemple une équipe de direction au complet. Le point de départ reste toujours une personne, jamais une organisation.
+
+**Quel est le niveau de confidentialité ?**
+Absolu. Christian cultive une discrétion totale et maintient des murailles de Chine strictes entre ses clients — rien ne circule d'un accompagnement à l'autre. Les conversations sont transcrites ; la transcription appartient exclusivement à Christian et au client et n'est en aucun cas partagée avec un tiers.
+
+**Christian ne coache-t-il que des gens du monde de l'entreprise ? Et les politiques, les sportifs, les artistes ?**
+Non — le monde de l'entreprise est son origine, pas une frontière. Christian travaille aussi avec des personnes qui en sont éloignées : responsables politiques, sportifs, artistes, toute personne qui poursuit un objectif exigeant. Les mécanismes du coaching — être, se réinventer, changer de perspective, voir ce qui vous retient — sont universels : ils valent pour tout être humain qui travaille à quelque chose qui compte pour lui.
 
 **Qui sont vos modèles ?**
 Des coaches qui travaillent avec peu de clients, et qui vont en profondeur : Rich Litvin et Steve Chandler, entre autres.

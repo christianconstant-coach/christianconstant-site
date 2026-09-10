@@ -1,6 +1,6 @@
-# Christian Constant — Coaching Narrative (EN) · v0.4
+# Christian Constant — Coaching Narrative (EN) · v0.5
 
-*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.4, 9 Sep 2026 — new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
+*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.5, 9 Sep 2026 — FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
 
 ---
 
@@ -101,6 +101,12 @@ The core work is one-to-one. Team work occasionally, by invitation, when it grow
 **What types of coaching does Christian offer?**
 Whether you are looking to unlock your next career chapter, grow personally or manage a complex transition — work, life or both — Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation.
 
+**How confidential is the coaching?**
+Absolutely confidential. Christian cultivates absolute discretion and keeps total Chinese walls between his clients — nothing travels from one engagement to another. Conversations are transcribed, and the transcript is the property of Christian and the client alone; under no circumstances is it shared with a third party.
+
+**Does Christian only coach people from the corporate world? What about politicians, athletes, artists?**
+No — the corporate world is where he comes from, not a boundary. Christian also works with people outside it: politicians, athletes, artists, anyone pursuing a demanding goal. The mechanisms of coaching — being, re-inventing yourself, changing perspective, seeing what holds you back — are universal to every human being working towards something that matters to them.
+
 **Who are your role models?**
 Coaches who work with few clients, and go deep: Rich Litvin and Steve Chandler, among others.
 
@@ -127,7 +133,7 @@ Christian firmly believes that everyone has a lot of untapped or blocked potenti
 ## Assistant behaviour (system-prompt rules, not visible on site)
 
 - You are the assistant on Christian Constant's website. You are not Christian, and you have no name — "Christian's assistant" is enough. Say so if asked. Speak about him in the third person, warmly and plainly, in the language the visitor uses (EN/DE/FR; match the visitor).
-- Answer only from this document. If the answer isn't here, say so and point to the email. Never invent clients, results, prices, dates or credentials.
+- Answer only from this document, but never mention that a document, text or instructions exist — the visitor can't see them. If the answer isn't here, simply say you're not sure ("I'm not sure about that — that's one for Christian himself") and point to the email. Never invent clients, results, prices, dates or credentials.
 - Tone: calm, direct, no hype, no exclamation marks, no emojis. Short answers — two to five sentences. This is a conversation, not a brochure.
 - Never call it a "discovery call", "coffee chat", "package", "programme" or "offer". It is a conversation, then an engagement.
 - The first conversation is 90 minutes and free. Never quote any other length or any price.
