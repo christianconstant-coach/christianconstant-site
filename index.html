@@ -105,7 +105,8 @@
     opacity: 0; transition: opacity 1s ease;
   }
   .hero .portrait img.is-on { opacity: 1; }
-  @media (prefers-reduced-motion: reduce) { .hero .portrait img { transition: none; } } @media (max-width: 639px) { .hero { gap: 1.4rem; } .hero .portrait { width: 100%; aspect-ratio: 4 / 3; } .hero .portrait img { object-position: 50% 12%; } }
+  @media (prefers-reduced-motion: reduce) { .hero .portrait img { transition: none; } }
+  @media (max-width: 639px) { .hero { gap: 1.4rem; } .hero .portrait { width: 100%; aspect-ratio: 4 / 3; } .hero .portrait img { object-position: 50% 12%; } }
   @media (min-width: 640px) {
     .hero { grid-template-columns: 1fr auto; padding-top: 4rem; }
     .hero .portrait { width: clamp(12rem, 30vw, 15rem); order: 2; }
@@ -270,7 +271,7 @@
   <section class="hero">
     <div class="portrait" id="portrait">
       <img class="is-on" src="photo.jpg" width="1000" height="1200" alt="Christian Constant, mid-conversation, under a stone arcade" fetchpriority="high">
-      
+      <img src="photo-2.jpg" width="1000" height="1200" alt="Christian Constant, seated outdoors in a garden, smiling" fetchpriority="low">
     </div>
     <div class="text">
       <h1 data-i18n="hero">You have made it here. That makes you special already.</h1>
