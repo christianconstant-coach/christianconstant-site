@@ -1,32 +1,36 @@
-# Christian Constant — Narratif de coaching (FR) · v0.4
+# Christian Constant — Narratif de coaching (FR) · v0.6
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.4, 9 septembre 2026 — FAQ sur la confidentialité et sur les clients hors entreprise ; nouvelle FAQ « Quels types de coaching Christian propose-t-il ? » ; relecture de Christian intégrée (nouvelle phrase d'accroche, « Le but », « Le deal », mentor plutôt qu'opérateur).*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
 
 ---
 
 ## Une phrase
 
-Vous êtes déjà arrivé jusqu'ici. Jusqu'où êtes-vous capable d'aller ?
+Vous êtes au bon endroit
+
+## Sous-titre
+
+Un P&L à piloter. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.
 
 ## Pourquoi je coache
 
-Pendant vingt-six ans, j'ai été celui qui, dans la pièce, devait décider. J'ai construit et dirigé des entreprises sur deux continents : les produits TV chez Vodafone (plus d'un milliard d'euros de chiffre d'affaires), la division européenne puis l'activité globale de vente directe d'une start-up de la Silicon Valley, passée de 150 millions à 2,6 milliards de dollars de valorisation durant mon mandat de dirigeant, et plus récemment une grande activité grand public en Suisse, avec cinquante personnes et plusieurs centaines de milliers de clients payants.
+Pendant vingt-six ans, j'ai été celui qui, dans la pièce, devait décider. J'ai construit et dirigé des entreprises sur deux continents : les produits TV chez Vodafone (plus d'un milliard d'euros de chiffre d'affaires), la division européenne puis l'activité globale B2C d'une start-up de la Silicon Valley, passée de 150 millions à 2,6 milliards de dollars de valorisation durant mon mandat de dirigeant, et plus récemment une grande activité médias en Suisse, avec cinquante personnes et plusieurs centaines de milliers d'abonnés.
 
 En chemin, j'ai remarqué deux choses.
 
-D'abord : les problèmes les plus durs que j'ai rencontrés n'ont jamais vraiment été des questions de stratégie, d'argent ou de technologie. Il s'agissait d'une personne — souvent moi — enfermée dans un narratif sur ce qui était (im)possible. Souvent victime de facteurs ou de personnes hors de son contrôle. Les moments qui ont tout changé étaient des rencontres. Quelques-unes, avec le bon interlocuteur, au bon moment.
+D'abord : les défis les plus durs que j'ai rencontrés n'ont jamais vraiment été des questions de stratégie, d'argent ou de technologie. Il s'agissait d'une personne — souvent moi — limitée par un narratif sur ce qui était (im)possible. Souvent victime de facteurs ou de personnes hors de son contrôle. Les moments qui ont tout changé étaient des conversations. Avec le bon interlocuteur, au bon moment.
 
 Ensuite : presque personne, au sommet des organisations, n'a cet interlocuteur. Plus on monte, moins il y a de gens pour vous dire la vérité, et moins il y a d'endroits où penser à voix haute sans prendre de risque.
 
-Je coache parce que je sais être cette personne pour un nombre restreint de personnes qui aspirent à l'ultra-performance, dans quelque domaine que ce soit.
+Je coache parce que je sais être cette personne pour un nombre restreint de clients qui aspirent à l'ultra-performance, dans quelque domaine que ce soit, tout en restant farouchement fidèles à eux-mêmes.
 
 ## Avec qui je travaille
 
-Des personnes qui portent souvent une vraie responsabilité : CEO, directeurs généraux, fondateurs, dirigeants en charge d'un P&L, d'un pays, d'un produit, d'une équipe de plusieurs centaines de personnes. Généralement à un point d'inflexion — un rôle plus grand, une entreprise qui a dépassé ses recettes habituelles, une décision sans cesse repoussée, un succès qui, curieusement, n'a pas le goût d'un succès.
+Des personnes qui portent souvent une vraie responsabilité : CEO, directeurs généraux, fondateurs, dirigeants en charge d'un P&L, d'un pays, d'un produit, d'une équipe de plusieurs centaines de personnes. Généralement à un point d'inflexion — un rôle plus grand, une entreprise qui cherche à se réinventer, une décision sans cesse repoussée, un succès qui, curieusement, n'a pas le goût du succès.
 
 Je travaille en anglais, en allemand et en français, avec des personnes partout dans le monde — depuis Zurich et en ligne.
 
-Je prends très peu de clients à la fois. Pas comme argument marketing — parce que ce travail est profondément humain et précis.
+Je prends un nombre limité de clients à la fois. Pas comme argument marketing — parce que ce travail est profondément humain et sur-mesure.
 
 ## Le but
 
@@ -38,11 +42,11 @@ Je n'ai pas de processus standard. Je fais du sur-mesure. Je vous promets toute 
 
 Deux registres, à dessein.
 
-**Le mentor.** J'ai géré des P&L, fait grandir des équipes, lancé des produits, et vécu la croissance d'une start-up de la série A jusqu'au statut de licorne. Je sais ce qu'un board attend, ce que coûte un mauvais recrutement, et pourquoi un plan de go-to-market échoue in fine. Je suis en mesure d'aider parce que je ressens profondément ce que vous vivez.
+**Le mentor.** J'ai géré des P&L, fait grandir des équipes, lancé des produits, et vécu la croissance d'une start-up de la série A jusqu'au statut de licorne. Je sais ce qu'un board attend, ce que coûte un mauvais recrutement, et pourquoi un plan de go-to-market échoue in fine. Je suis en mesure d'aider parce que je comprends profondément ce que vous vivez.
 
 **Le coach.** Ce n'est pas le mentor qui libère pleinement le potentiel des individus. Ce qui libère les gens, c'est d'être vu clairement, de s'entendre poser la question que personne n'ose poser, et d'avoir l'espace pour y répondre honnêtement. C'est une autre forme de présence.
 
-La plupart des coaches choisissent une extrémité de ce spectre. Je crois que la valeur est de tenir les deux, et de savoir lequel le moment appelle.
+La plupart des coaches choisissent une extrémité de ce spectre. Je crois qu'il y a un bénéfice à maîtriser les deux, afin de savoir quel registre manier dans quelles circonstances.
 
 ## Le deal
 
@@ -50,9 +54,9 @@ Il n'y a ni offre standard ni grille tarifaire.
 
 Cela commence par une conversation — une vraie. Une conversation de coaching puissante de 90 minutes, sans frais, sans pitch de vente. Ni « faire connaissance », ni « prendre un café ensemble ». Une conversation de coaching sur ce que vous affrontez réellement. À l'issue, nous décidons tous les deux de la suite : vous saurez si je peux vous aider, et moi aussi.
 
-Si nous voulons tous les deux continuer, je vous fais une proposition pour l'ensemble de l'accompagnement — typiquement six à douze mois — et nous convenons d'un honoraire. Vous n'achetez pas des heures. Vous achetez l'accès à quelqu'un qui pense à vous et à votre situation entre les séances autant que pendant, quelqu'un qui investit en vous.
+Si nous voulons tous les deux continuer, je vous fais une proposition pour l'ensemble de l'accompagnement — généralement trois à six mois — et nous convenons d'un honoraire.
 
-Je ne fais pas de publicité. Toutes les personnes avec qui je travaille sont venues sur recommandation. Si vous lisez ceci, c'est probablement votre cas.
+Je ne fais généralement pas de publicité. Toutes les personnes avec qui je travaille sont venues sur recommandation. Si vous lisez ceci, c'est probablement votre cas.
 
 ## Parcours, en bref
 
@@ -75,10 +79,10 @@ Formation au coaching : Co-Active Training Institute (accrédité ICF), dès sep
 ## FAQ (l'assistant répond à partir d'ici)
 
 **Prenez-vous de nouveaux clients ?**
-Quelques-uns, oui. Christian garde volontairement ce nombre très petit. La porte d'entrée est une conversation, pas une candidature — écrivez-lui.
+Quelques-uns, oui. Christian garde volontairement ce nombre relativement restreint. La porte d'entrée est une conversation, pas une candidature — écrivez-lui.
 
 **Combien ça coûte ?**
-Il n'y a pas de grille tarifaire. Après une première conversation, si les deux parties veulent continuer, Christian propose un honoraire unique pour l'ensemble de l'accompagnement, en général six à douze mois.
+Il n'y a pas de grille tarifaire. Après une première conversation, si les deux parties veulent continuer, Christian propose un honoraire pour l'ensemble de l'accompagnement, en général trois à six mois.
 
 **Qu'est-ce que la première conversation ?**
 Environ 90 minutes, sans frais, sans argumentaire. C'est une vraie expérience de coaching sur ce que vous affrontez réellement — pas un appel commercial. À la fin, vous saurez si c'est pour vous, et Christian saura s'il peut et veut vous aider. Ensuite, vous décidez tous les deux de la suite.
@@ -96,28 +100,31 @@ Français, anglais, allemand — langue maternelle ou courant. Les séances peuv
 Christian suit dès septembre 2026 la formation du renommé Co-Active Training Institute (accréditée ICF) et travaille vers la certification ICF ACC. Avant cela : vingt-six ans à diriger des entreprises et à coacher des collaborateurs — la partie du CV qui compte le plus pour les clients.
 
 **Coachez-vous des équipes ou animez-vous des ateliers ?**
-Le cœur du travail est en tête-à-tête. Du travail d'équipe occasionnellement, sur invitation, quand il découle d'un accompagnement existant.
+Le cœur du travail est en tête-à-tête. Du travail d'équipe occasionnellement, quand il découle d'un accompagnement existant.
+
+**Pourquoi travailler avec Christian ?**
+Parce qu'il a occupé le siège où vous êtes — P&L, équipes, investisseurs, technologies qui bousculent — et qu'il sait que rien de tout cela n'est la vraie conversation. Il apporte deux choses à la fois : un mentor qui l'a fait, et un coach qui vous aide à voir clair, à décider et à rester farouchement vous-même en le faisant. Peu de clients, du sur-mesure, et il ne vous dira jamais uniquement ce que vous voulez entendre.
 
 **Quels types de coaching Christian propose-t-il ?**
 Que vous souhaitiez ouvrir le prochain chapitre de votre carrière, grandir sur le plan personnel ou traverser une transition complexe — professionnelle, personnelle ou les deux — Christian conçoit un accompagnement individuel, sur mesure, adapté à vos besoins précis. Plus rarement, il coache aussi des groupes ou des équipes, par exemple une équipe de direction au complet. Le point de départ reste toujours une personne, jamais une organisation.
 
 **Quel est le niveau de confidentialité ?**
-Absolu. Christian cultive une discrétion totale et maintient des murailles de Chine strictes entre ses clients — rien ne circule d'un accompagnement à l'autre. Les conversations sont transcrites ; la transcription appartient exclusivement à Christian et au client et n'est en aucun cas partagée avec un tiers.
+Absolu. Christian cultive une discrétion totale et maintient des murailles de Chine strictes entre ses clients — rien ne circule d'un accompagnement à l'autre.
 
 **Christian ne coache-t-il que des gens du monde de l'entreprise ? Et les politiques, les sportifs, les artistes ?**
 Non — le monde de l'entreprise est son origine, pas une frontière. Christian travaille aussi avec des personnes qui en sont éloignées : responsables politiques, sportifs, artistes, toute personne qui poursuit un objectif exigeant. Les mécanismes du coaching — être, se réinventer, changer de perspective, voir ce qui vous retient — sont universels : ils valent pour tout être humain qui travaille à quelque chose qui compte pour lui.
 
-**Qui sont vos modèles ?**
-Des coaches qui travaillent avec peu de clients, et qui vont en profondeur : Rich Litvin et Steve Chandler, entre autres.
-
 **Avez-vous encore un emploi à côté ?**
-Non. Christian a créé sa propre pratique de coaching, à laquelle il se consacre à cent pour cent. Jusqu'à récemment, il dirigeait une grande activité grand public à Zurich — c'est un chapitre clos.
+Non. Christian a créé sa propre activité de coaching, à laquelle il se consacre à 100%. Jusqu'à récemment, il dirigeait une grande activité grand public à Zurich — c'est un chapitre clos.
+
+**Faut-il une recommandation ou une invitation pour travailler avec Christian ?**
+Normalement, oui, mais ce n'est pas une règle absolue : si vous êtes arrivé ici autrement, écrivez-lui quand même. Quelques lignes sur qui vous êtes et ce que vous affrontez suffisent ; il lit et répond à tout lui-même. Les séances ont lieu en français, en anglais ou en allemand, à distance ou en personne.
 
 **Puis-je vous recommander quelqu'un ?**
 Oui, bien entendu. Envoyez à Christian un court paragraphe sur la personne et pourquoi vous avez pensé à elle.
 
 **Comment vous joindre ?**
-Par e-mail : hello@christian-constant.com. Il n'y a volontairement pas de formulaire de réservation — quelques lignes de votre part sont la bonne première étape.
+Par e-mail : hello@christian-constant.com. Il n'y a volontairement pas de formulaire de contact — quelques lignes de votre part sont la bonne première étape.
 
 **Avez-vous de l'expérience en coaching ? Depuis quand coachez-vous ?**
 Tout au long de sa carrière en entreprise et en start-up, c'est la part du travail que Christian a le plus aimée : aider ses collègues à voir ce qu'ils ne voyaient pas, et accepter leurs retours en échange. Depuis 2026, il se consacre entièrement au coaching et a créé sa propre pratique sur mesure.
@@ -133,11 +140,12 @@ Christian est convaincu que chacun porte beaucoup de potentiel inexploité ou bl
 ## Textes du site (interface, français) — à relire
 
 - En-tête : **Christian Constant** · Tailor-Made Leadership Coaching · choix de langue EN / DE / FR
-- Une phrase (accroche) : *Vous êtes déjà arrivé jusqu'ici. Jusqu'où êtes-vous capable d'aller ?*
-- Sous-ligne (trois lignes) : ENGLISH · FRANÇAIS · DEUTSCH / À DISTANCE OU EN PERSONNE / SUR RECOMMANDATION OU INVITATION
+- Accroche (dans l'image sur mobile, à côté sur ordinateur) : *Vous êtes au bon endroit*
+- Sous-titre : *Un P&L à piloter. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.*
 - Premier message de l'assistant : *Je suis l'assistant de Christian — pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.*
-- Questions suggérées : *Pourquoi Christian coache-t-il ?* · *Avec qui travaille-t-il ?* · *Combien ça coûte ?* · *Comment ça commence ?*
-- Champ de saisie : *Demandez comment Christian travaille…*
+- Questions suggérées : *Quels types de coaching Christian propose-t-il ?* · *Pourquoi travailler avec Christian ?* · *Avec qui travaille-t-il ?* · *Combien ça coûte ?* · *Par où commencer ?*
+- Ligne de relance : *Souhaitez-vous en savoir plus ?*
+- Champ de saisie : *Demandez comment Christian procède…*
 - Note sous la conversation : *Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.*
 - Si l'assistant est indisponible : *L'assistant est momentanément indisponible. Écrivez directement à Christian : hello@christian-constant.com — il lit et répond à tout lui-même.*
 - Pied de page : hello@christian-constant.com · LinkedIn · Mentions légales · Confidentialité · © 2026

@@ -33,7 +33,7 @@ const head = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Christian Constant">
-<meta property="og:description" content="You have made it here. That makes you special already. Executive coaching in Zurich, by referral.">
+<meta property="og:description" content="You have come to the right place. Tailor-made leadership coaching in Zurich — English, German, French.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231D4F6E'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='white'%3Ecc%3C/text%3E%3C/svg%3E">
 `;

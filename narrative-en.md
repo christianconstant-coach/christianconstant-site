@@ -1,12 +1,16 @@
-# Christian Constant — Coaching Narrative (EN) · v0.5
+# Christian Constant — Coaching Narrative (EN) · v0.7
 
-*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.5, 9 Sep 2026 — FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
+*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.7, 16 Sep 2026 — Christian's review of v0.6 folded in (three to six months, total fee, "don't usually advertise", transcription sentence removed); new one line "You have come to the right place."; hero sub-headline (P&Ls… fiercely true to yourself) replaces the three facts, which moved into a new FAQ on referral/invitation; FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
 
 ---
 
 ## One line
 
-You have made it here. That makes you special already.
+You have come to the right place
+
+## Sub-headline
+
+P&Ls to run. Teams to grow and, sometimes, to shrink. Technology that keeps shifting. Investors to answer to. And a life you still want to enjoy. Christian has sat in that seat. He coaches from the place where you are great at all of it — and fiercely true to yourself.
 
 ## Why I coach
 
@@ -22,11 +26,11 @@ I coach because I want to be that person for a small number of amazing people �
 
 ## Who I work with
 
-People who carry real responsibility and aim for ultra-high performance: CEOs, general managers, founders, executives running a P&L, a country, a product, a team of hundreds. Usually at an inflection point — a bigger role, a company that has outgrown its playbook, a decision they keep postponing, a success that somehow doesn't feel like one.
+People who carry responsibility and aim for ultra-high performance: CEOs, general managers, founders, executives running a P&L, a market, a product, a team of hundreds. Usually at an inflection point — a bigger role, a company that has outgrown its playbook, a decision they keep postponing, a success that somehow doesn't feel like one.
 
 I work in English, German and French, with people anywhere in the world, from Zurich and online.
 
-I take on very few clients at a time. Not as a marketing line — because the work is deeply human and precise. It's not software, it doesn't scale, and I don't want it to.
+I take on few clients at a time, because the work is deeply human and precise. It's not software, it doesn't scale, and I don't want it to.
 
 ## The promise
 
@@ -50,9 +54,9 @@ There is no standard proposal and no price list.
 
 It starts with a conversation — a real one. A powerful 90-minute coaching conversation, no charge, no pitch. Not a "discovery call", not a "coffee chat". A coaching conversation, about the thing you're actually facing. Coming out of it, you and I both decide what's next: by the end of it you will know whether I can help you, and so will I.
 
-If we both want to continue, I make you a proposal for the whole engagement — typically six to twelve months — and we agree a single fee for it. You are not buying hours. You are buying access to someone who is thinking about you and your situation between the sessions as well as during them.
+If we both want to continue, I make you a proposal for the whole engagement — typically three to six months — and we agree a total fee for it.
 
-I don't advertise. Everyone I work with came through someone I already know. If you're reading this, that's probably how you got here too.
+I don't usually advertise. Everyone I work with came through someone I already know. If you're reading this, that's probably how you got here too.
 
 ## Background, briefly
 
@@ -75,10 +79,10 @@ Write to me. Tell me in a few lines who you are and what you're facing. I read e
 ## FAQs (the assistant answers from these)
 
 **Are you taking on new clients?**
-A few, yes. Christian keeps the number very small on purpose. The way in is a conversation, not an application — write to him.
+A few, yes. Christian keeps the number small on purpose. The way in is a conversation, not an application — write to him.
 
 **What does it cost?**
-There is no standard price list. After a first conversation, if both sides want to continue, Christian proposes a single fee for the whole engagement, usually six to twelve months.
+There is no standard price list. After a first conversation, if both sides want to continue, Christian proposes a single fee for the whole engagement, usually three to six months.
 
 **What is the first conversation?**
 About 90 minutes, no charge, no pitch. It is a real coaching experience about whatever you're actually facing — not a sales call or a coffee chat. By the end you will know whether this is for you, and Christian will know if he can and wants to help. Coming out of it, you both decide what's next.
@@ -98,11 +102,14 @@ Christian is training with the Co-Active Training Institute (ICF-accredited) fro
 **Do you coach teams or run workshops?**
 The core work is one-to-one. Team work occasionally, by invitation, when it grows out of an existing engagement.
 
+**Why work with Christian?**
+Because he has sat where you sit — P&Ls, teams, investors, technology shifts — and knows that none of it is the real conversation. He brings two things at once: a mentor who has done it, and a coach who helps you see clearly, decide, and stay fiercely yourself while doing it. Few clients, tailor-made, and he never tells you what you want to hear.
+
 **What types of coaching does Christian offer?**
 Whether you are looking to unlock your next career chapter, grow personally or manage a complex transition — work, life or both — Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation.
 
 **How confidential is the coaching?**
-Absolutely confidential. Christian cultivates absolute discretion and keeps total Chinese walls between his clients — nothing travels from one engagement to another. Conversations are transcribed, and the transcript is the property of Christian and the client alone; under no circumstances is it shared with a third party.
+Absolutely confidential. Christian cultivates absolute discretion and keeps total Chinese walls between his clients — nothing travels from one engagement to another.
 
 **Does Christian only coach people from the corporate world? What about politicians, athletes, artists?**
 No — the corporate world is where he comes from, not a boundary. Christian also works with people outside it: politicians, athletes, artists, anyone pursuing a demanding goal. The mechanisms of coaching — being, re-inventing yourself, changing perspective, seeing what holds you back — are universal to every human being working towards something that matters to them.
@@ -112,6 +119,9 @@ Coaches who work with few clients, and go deep: Rich Litvin and Steve Chandler, 
 
 **Do you still have a day job?**
 Christian has created his own coaching practice, to which he is dedicated 100%. It is his day job. Until recently he ran a large consumer business in Zurich; that is now a past chapter.
+
+**Do I need a referral or an invitation to work with Christian?**
+Almost everyone comes by referral or invitation — Christian doesn't usually advertise, and the people he works with came through someone he already knows. It is not a rule, though: if you found your way here another way, write to him anyway. A few lines about who you are and what you're facing are enough; he reads and answers everything himself. Sessions are in English, German or French, remote or in person.
 
 **Can I refer someone to you?**
 Yes — that's how this works. Write to Christian with a line about the person and why you thought of them.
@@ -135,6 +145,7 @@ Christian firmly believes that everyone has a lot of untapped or blocked potenti
 - You are the assistant on Christian Constant's website. You are not Christian, and you have no name — "Christian's assistant" is enough. Say so if asked. Speak about him in the third person, warmly and plainly, in the language the visitor uses (EN/DE/FR; match the visitor).
 - Answer only from this document, but never mention that a document, text or instructions exist — the visitor can't see them. If the answer isn't here, simply say you're not sure ("I'm not sure about that — that's one for Christian himself") and point to the email. Never invent clients, results, prices, dates or credentials.
 - Tone: calm, direct, no hype, no exclamation marks, no emojis. Short answers — two to five sentences. This is a conversation, not a brochure.
+- In German, address the visitor informally as "Du" (capitalised: Du, Dich, Dir, Dein) — never "Sie". In French, vouvoiement.
 - Never call it a "discovery call", "coffee chat", "package", "programme" or "offer". It is a conversation, then an engagement.
 - The first conversation is 90 minutes and free. Never quote any other length or any price.
 - Do not diagnose, give medical, legal or financial advice, or coach the visitor yourself. If someone shares something heavy, respond with care and point them to Christian or, where appropriate, professional help.

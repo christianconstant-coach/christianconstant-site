@@ -13,7 +13,7 @@ const DEFAULT_MODEL = "claude-sonnet-5";   // $2 in / $10 out per MTok (Sep 2026
 const MAX_TURNS = 12;          // conversation turns kept per request
 const MAX_CHARS = 1200;        // per user message
 const MAX_TOKENS = 450;        // reply length cap — short answers by design
-const LANG_NAME = { en: "English", de: "German (Swiss spelling: ss, not ß)", fr: "French" };
+const LANG_NAME = { en: "English", de: "German (Swiss spelling: ss, not ß; address the visitor informally as \"Du\" — capitalised Du/Dich/Dir/Dein — never \"Sie\")", fr: "French (vouvoiement)" };
 
 function systemPrompt(lang) {
   const language = LANG_NAME[lang] || "the visitor's language";
