@@ -3,11 +3,11 @@
 import { onRequestPost, onRequestGet } from "./chat.js";
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.hostname.startsWith("www.")) return Response.redirect("https://" + url.hostname.slice(4) + url.pathname + url.search, 301);
     if (url.pathname === "/api/chat") {
-      return request.method === "POST" ? onRequestPost({ request, env }) : onRequestGet();
+      return request.method === "POST" ? onRequestPost({ request, env, ctx }) : onRequestGet();
     }
     return env.ASSETS.fetch(request);
   },

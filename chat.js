@@ -38,11 +38,40 @@ ${doc}
 --- END ---${lang === "en" ? "" : "\n\n(These rules also apply.)\n" + (KNOWLEDGE.en.split("## Assistant behaviour")[1] || "")}`;
 }
 
+// ---- anonymous question log (Cloudflare D1, binding QUESTIONS) ----
+// Stores: hour of the day (not the exact time), language, question, answer, a random
+// per-page-load conversation id, the turn number and whether a suggested question was
+// clicked. Never stores IP address, user agent or anything that persists between visits.
+// If the binding is missing or the write fails, the chat is unaffected.
+let tableReady = null;
+function ensureTable(db) {
+  if (!tableReady) {
+    tableReady = db.prepare(`CREATE TABLE IF NOT EXISTS questions (
+      id TEXT PRIMARY KEY, asked_at TEXT NOT NULL, lang TEXT NOT NULL, conversation TEXT,
+      turn INTEGER, source TEXT, question TEXT NOT NULL, answer TEXT)`).run()
+      .catch((e) => { tableReady = null; throw e; });
+  }
+  return tableReady;
+}
+async function logQuestion(db, row) {
+  try {
+    await ensureTable(db);
+    await db.prepare("INSERT INTO questions (id, asked_at, lang, conversation, turn, source, question) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)")
+      .bind(row.id, row.asked_at, row.lang, row.conversation, row.turn, row.source, row.question).run();
+  } catch (e) { console.error("question log failed", e && e.message); }
+}
+async function logAnswer(db, id, answer) {
+  try {
+    await ensureTable(db);
+    await db.prepare("UPDATE questions SET answer = ?1 WHERE id = ?2").bind(answer, id).run();
+  } catch (e) { console.error("answer log failed", e && e.message); }
+}
+
 function json(status, obj) {
   return new Response(JSON.stringify(obj), { status, headers: { "Content-Type": "application/json" } });
 }
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, ctx }) {
   if (env.ALLOWED_ORIGIN) {
     const origin = request.headers.get("Origin") || "";
     if (origin && origin !== env.ALLOWED_ORIGIN) return json(403, { error: "forbidden" });
@@ -61,6 +90,22 @@ export async function onRequestPost({ request, env }) {
   // The API requires the conversation to start with a user turn.
   while (messages.length && messages[0].role !== "user") messages.shift();
   if (!messages.length) return json(400, { error: "no message" });
+
+  // Log the question (anonymously) before answering; the answer is added when the stream ends.
+  const db = env.QUESTIONS;
+  const logId = db ? crypto.randomUUID() : null;
+  if (db) {
+    const last = messages[messages.length - 1];
+    ctx.waitUntil(logQuestion(db, {
+      id: logId,
+      asked_at: new Date().toISOString().slice(0, 13) + ":00Z",
+      lang,
+      conversation: typeof body.conversation === "string" && /^[a-z0-9]{1,32}$/.test(body.conversation) ? body.conversation : null,
+      turn: messages.filter((m) => m.role === "user").length,
+      source: body.source === "chip" ? "chip" : "typed",
+      question: last.role === "user" ? last.content : "",
+    }));
+  }
 
   const upstream = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -88,6 +133,7 @@ export async function onRequestPost({ request, env }) {
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
   let buffer = "";
+  let answer = "";
   const out = new TransformStream({
     transform(chunk, controller) {
       buffer += decoder.decode(chunk, { stream: true });
@@ -98,10 +144,14 @@ export async function onRequestPost({ request, env }) {
         try {
           const ev = JSON.parse(line.slice(5).trim());
           if (ev.type === "content_block_delta" && ev.delta && ev.delta.type === "text_delta") {
+            answer += ev.delta.text;
             controller.enqueue(encoder.encode(ev.delta.text));
           }
         } catch { /* ignore keep-alives and partial lines */ }
       }
+    },
+    flush() {
+      if (db && answer) ctx.waitUntil(logAnswer(db, logId, answer));
     },
   });
 

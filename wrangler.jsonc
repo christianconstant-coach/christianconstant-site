@@ -5,7 +5,19 @@
   "compatibility_date": "2025-06-01",
   "assets": {
     "directory": "./public",
-    "binding": "ASSETS", "run_worker_first": true
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
-  "observability": { "enabled": true }, "keep_vars": true, "vars": { "ANTHROPIC_WORKSPACE_ID": "wrkspc_019hB8kqWp9QgPdx7gvuSuRo", "ALLOWED_ORIGIN": "https://christian-constant.com" }
+  "observability": { "enabled": true },
+  // Anonymous log of the assistant's questions and answers (see chat.js). Created in the dashboard: D1 → christian-constant-questions.
+  "d1_databases": [
+    { "binding": "QUESTIONS", "database_name": "christian-constant-questions", "database_id": "c6a92018-e402-49c9-be2a-c5f50f4266ad" }
+  ],
+  // Plain (non-secret) settings live here so every deploy carries them.
+  // Secrets (ANTHROPIC_API_KEY) are set in the Cloudflare dashboard and survive deploys.
+  "keep_vars": true,
+  "vars": {
+    "ANTHROPIC_WORKSPACE_ID": "wrkspc_019hB8kqWp9QgPdx7gvuSuRo",
+    "ALLOWED_ORIGIN": "https://christian-constant.com"
+  }
 }
