@@ -340,7 +340,7 @@
       imprintTitle: "Imprint",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zurich, Switzerland</p><p>" + EMAIL + "</p><p>Responsible for content: Christian Constant.</p>",
       privacyTitle: "Privacy",
-      privacyBody: "<p>This site has no accounts, no cookies and no analytics.</p><p>The conversation on this page is answered by an AI assistant. What you type is sent to Anthropic (USA) to generate the reply and is not stored by this site afterwards. Please don't share anything confidential here — that is what the conversation with Christian is for.</p><p>Questions about your data: " + EMAIL + ".</p>"
+      privacyBody: "<p>This site has no accounts, no cookies and no analytics.</p><p>The conversation on this page is answered by an AI assistant. What you type is sent to Anthropic (USA) to generate the reply. Questions and answers are kept anonymously — without IP address, device or location — so that Christian can improve the assistant. Please don't share anything confidential here — that is what the conversation with Christian is for.</p><p>Questions about your data: " + EMAIL + ".</p>"
     },
     de: {
       name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
@@ -358,7 +358,7 @@
       imprintTitle: "Impressum",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zürich, Schweiz</p><p>" + EMAIL + "</p><p>Verantwortlich für den Inhalt: Christian Constant.</p>",
       privacyTitle: "Datenschutz",
-      privacyBody: "<p>Diese Seite hat keine Konten, keine Cookies und keine Analyse-Tools.</p><p>Das Gespräch auf dieser Seite beantwortet ein KI-Assistent. Was Du eingibst, wird zur Erzeugung der Antwort an Anthropic (USA) übermittelt und von dieser Seite danach nicht gespeichert. Bitte teile hier nichts Vertrauliches – dafür ist das Gespräch mit Christian da.</p><p>Fragen zu Deinen Daten: " + EMAIL + ".</p>"
+      privacyBody: "<p>Diese Seite hat keine Konten, keine Cookies und keine Analyse-Tools.</p><p>Das Gespräch auf dieser Seite beantwortet ein KI-Assistent. Was Du eingibst, wird zur Erzeugung der Antwort an Anthropic (USA) übermittelt. Fragen und Antworten werden anonym gespeichert – ohne IP-Adresse, Gerät oder Standort –, damit Christian den Assistenten verbessern kann. Bitte teile hier nichts Vertrauliches – dafür ist das Gespräch mit Christian da.</p><p>Fragen zu Deinen Daten: " + EMAIL + ".</p>"
     },
     fr: {
       name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
@@ -376,7 +376,7 @@
       imprintTitle: "Mentions légales",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zurich, Suisse</p><p>" + EMAIL + "</p><p>Responsable du contenu : Christian Constant.</p>",
       privacyTitle: "Confidentialité",
-      privacyBody: "<p>Ce site n'a ni comptes, ni cookies, ni outils d'analyse.</p><p>La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse et n'est pas conservé ensuite par ce site. Ne partagez rien de confidentiel ici – c'est à cela que sert la conversation avec Christian.</p><p>Questions sur vos données : " + EMAIL + ".</p>"
+      privacyBody: "<p>Ce site n'a ni comptes, ni cookies, ni outils d'analyse.</p><p>La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse. Les questions et les réponses sont conservées de manière anonyme – sans adresse IP, appareil ni localisation – afin que Christian puisse améliorer l'assistant. Ne partagez rien de confidentiel ici – c'est à cela que sert la conversation avec Christian.</p><p>Questions sur vos données : " + EMAIL + ".</p>"
     }
   };
 
@@ -437,6 +437,7 @@
   var history = [];        // {role, content} for the live API
   var busy = false;
   var asked = [];          // indices of standard questions already clicked
+  var convo = Math.random().toString(36).slice(2, 10) + Date.now().toString(36); // random per page load; groups one visit's questions, identifies nobody
 
   var $ = function (s) { return document.querySelector(s); };
   var thread = $("#thread"), prompts = $("#prompts"), form = $("#ask"), q = $("#q"), send = $("#send");
@@ -559,7 +560,7 @@
     fetch(API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: history.slice(-12), lang: lang })
+      body: JSON.stringify({ messages: history.slice(-12), lang: lang, conversation: convo, source: typeof promptIndex === "number" ? "chip" : "typed" })
     }).then(function (res) {
       if (!res.ok || !res.body) throw new Error("bad response " + res.status);
       var reader = res.body.getReader(), dec = new TextDecoder(), acc = "";
