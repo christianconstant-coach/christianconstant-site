@@ -1,6 +1,6 @@
-# Christian Constant — Coaching Narrative (EN) · v0.7
+# Christian Constant — Coaching Narrative (EN) · v0.8
 
-*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.7, 16 Sep 2026 — Christian's review of v0.6 folded in (three to six months, total fee, "don't usually advertise", transcription sentence removed); new one line "You have come to the right place."; hero sub-headline (P&Ls… fiercely true to yourself) replaces the three facts, which moved into a new FAQ on referral/invitation; FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
+*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v0.8, 18 Sep 2026 — sub-headline opens with "Budgets to meet" instead of "P&Ls to run" (less C-level); v0.7, 16 Sep 2026 — Christian's review of v0.6 folded in (three to six months, total fee, "don't usually advertise", transcription sentence removed); new one line "You have come to the right place."; hero sub-headline (P&Ls… fiercely true to yourself) replaces the three facts, which moved into a new FAQ on referral/invitation; FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
 
 ---
 
@@ -10,7 +10,7 @@ You have come to the right place
 
 ## Sub-headline
 
-P&Ls to run. Teams to grow and, sometimes, to shrink. Technology that keeps shifting. Investors to answer to. And a life you still want to enjoy. Christian has sat in that seat. He coaches from the place where you are great at all of it — and fiercely true to yourself.
+Budgets to meet. Teams to grow and, sometimes, to shrink. Technology that keeps shifting. Investors to answer to. And a life you still want to enjoy. Christian has sat in that seat. He coaches from the place where you are great at all of it — and fiercely true to yourself.
 
 ## Why I coach
 

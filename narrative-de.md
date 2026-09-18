@@ -1,6 +1,6 @@
-# Christian Constant — Coaching-Narrativ (DE) · v0.6
+# Christian Constant — Coaching-Narrativ (DE) · v0.7
 
-*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß). **Anrede: Du (grossgeschrieben: Du, Dich, Dir, Dein), nie Sie.** Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.6, 16. September 2026 — Christians Überarbeitung von v0.5 eingearbeitet (Sub-Headline, «drei bis sechs Monate», Transkriptions-Satz gestrichen, fünf vorgeschlagene Fragen); Umstellung von Sie auf Du; neuer Ein-Satz «Hier bist Du richtig»; Sub-Headline in Christians Worten ersetzt die drei Kurzangaben, die in eine neue FAQ zu Empfehlung/Einladung gewandert sind; FAQs zu Vertraulichkeit und zu Coachees ausserhalb der Wirtschaft.*
+*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß). **Anrede: Du (grossgeschrieben: Du, Dich, Dir, Dein), nie Sie.** Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.7, 18. Sept. 2026 — Sub-Headline beginnt mit «Budgets einhalten» statt «Eine P&L verantworten»; v0.6, 16. September 2026 — Christians Überarbeitung von v0.5 eingearbeitet (Sub-Headline, «drei bis sechs Monate», Transkriptions-Satz gestrichen, fünf vorgeschlagene Fragen); Umstellung von Sie auf Du; neuer Ein-Satz «Hier bist Du richtig»; Sub-Headline in Christians Worten ersetzt die drei Kurzangaben, die in eine neue FAQ zu Empfehlung/Einladung gewandert sind; FAQs zu Vertraulichkeit und zu Coachees ausserhalb der Wirtschaft.*
 
 ---
 
@@ -10,7 +10,7 @@ Hier bist Du richtig
 
 ## Sub-Headline
 
-Eine P&L verantworten. Teams aufbauen – und manchmal abbauen. Technologien, die immer neue Ufer erreichen. Investoren. Das Leben, das man in vollen Zügen geniessen will. Christian kennt das. Wie Du das meisterst und dabei kompromisslos Du selbst bleibst: darum geht es Christian.
+Budgets einhalten. Teams aufbauen – und manchmal abbauen. Technologien, die immer neue Ufer erreichen. Investoren. Das Leben, das man in vollen Zügen geniessen will. Christian kennt das. Wie Du das meisterst und dabei kompromisslos Du selbst bleibst: darum geht es Christian.
 
 ## Warum ich coache
 
@@ -144,7 +144,7 @@ Christian ist überzeugt, dass in jedem Menschen viel ungenutztes oder blockiert
 
 - Kopfzeile: **Christian Constant** · Tailor-Made Leadership Coaching · Sprachwahl EN / DE / FR
 - Headline (im Bild auf dem Handy, neben dem Bild auf dem Laptop): *Hier bist Du richtig*
-- Sub-Headline: *Eine P&L verantworten. Teams aufbauen – und manchmal abbauen. Technologien, die immer neue Ufer erreichen. Investoren. Das Leben, das man in vollen Zügen geniessen will. Christian kennt das. Wie Du das meisterst und dabei kompromisslos Du selbst bleibst: darum geht es Christian.*
+- Sub-Headline: *Budgets einhalten. Teams aufbauen – und manchmal abbauen. Technologien, die immer neue Ufer erreichen. Investoren. Das Leben, das man in vollen Zügen geniessen will. Christian kennt das. Wie Du das meisterst und dabei kompromisslos Du selbst bleibst: darum geht es Christian.*
 - Erste Nachricht des Assistenten: *Ich bin Christians Assistent — nicht Christian. Frag mich, wie er arbeitet, mit wem, und wie es weitergeht. Das echte Gespräch findet mit ihm statt.*
 - Vorgeschlagene Fragen: *Welche Art von Coaching bietet Christian an?* · *Warum mit Christian arbeiten?* · *Mit wem arbeitet er?* · *Was kostet das?* · *Wie fängt es an?*
 - Nachfrage-Zeile: *Möchtest Du mehr wissen?*

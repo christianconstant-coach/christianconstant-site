@@ -1,16 +1,16 @@
-# Christian Constant — Narratif de coaching (FR) · v0.6
+# Christian Constant — Narratif de coaching (FR) · v0.7
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.7, 18 sept. 2026 — nouvelle accroche « Vous avez frappé à la bonne porte » (remplace « Vous êtes au bon endroit »), sous-titre commençant par « Un budget à atteindre » au lieu de « Un P&L à piloter » ; v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
 
 ---
 
 ## Une phrase
 
-Vous êtes au bon endroit
+Vous avez frappé à la bonne porte
 
 ## Sous-titre
 
-Un P&L à piloter. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.
+Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.
 
 ## Pourquoi je coache
 
@@ -140,8 +140,8 @@ Christian est convaincu que chacun porte beaucoup de potentiel inexploité ou bl
 ## Textes du site (interface, français) — à relire
 
 - En-tête : **Christian Constant** · Tailor-Made Leadership Coaching · choix de langue EN / DE / FR
-- Accroche (dans l'image sur mobile, à côté sur ordinateur) : *Vous êtes au bon endroit*
-- Sous-titre : *Un P&L à piloter. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.*
+- Accroche (dans l'image sur mobile, à côté sur ordinateur) : *Vous avez frappé à la bonne porte*
+- Sous-titre : *Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Christian connaît cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est le but du coaching sur-mesure par Christian.*
 - Premier message de l'assistant : *Je suis l'assistant de Christian — pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.*
 - Questions suggérées : *Quels types de coaching Christian propose-t-il ?* · *Pourquoi travailler avec Christian ?* · *Avec qui travaille-t-il ?* · *Combien ça coûte ?* · *Par où commencer ?*
 - Ligne de relance : *Souhaitez-vous en savoir plus ?*
