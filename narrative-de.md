@@ -1,6 +1,6 @@
-# Christian Constant — Coaching-Narrativ (DE) · v0.7
+# Christian Constant — Coaching-Narrativ (DE) · v0.8
 
-*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß). **Anrede: Du (grossgeschrieben: Du, Dich, Dir, Dein), nie Sie.** Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.7, 18. Sept. 2026 — Sub-Headline beginnt mit «Budgets einhalten» statt «Eine P&L verantworten»; v0.6, 16. September 2026 — Christians Überarbeitung von v0.5 eingearbeitet (Sub-Headline, «drei bis sechs Monate», Transkriptions-Satz gestrichen, fünf vorgeschlagene Fragen); Umstellung von Sie auf Du; neuer Ein-Satz «Hier bist Du richtig»; Sub-Headline in Christians Worten ersetzt die drei Kurzangaben, die in eine neue FAQ zu Empfehlung/Einladung gewandert sind; FAQs zu Vertraulichkeit und zu Coachees ausserhalb der Wirtschaft.*
+*Lebendes Dokument. Es ist zwei Dinge zugleich: die Worte auf der Website und das Wissen, aus dem der Assistent auf Deutsch antwortet. Alles darin soll wahr sein, in Christians Stimme, und etwas, das er so auch über den Tisch sagen würde. Schweizer Schreibweise (ss statt ß). **Anrede: Du (grossgeschrieben: Du, Dich, Dir, Dein), nie Sie.** Kunden werden immer Coachees genannt, auf keinen Fall Klienten. v0.8, 18. Sept. 2026 — FAQ zu Referenzen/Stimmen von Coachees; v0.7, 18. Sept. 2026 — Sub-Headline beginnt mit «Budgets einhalten» statt «Eine P&L verantworten»; v0.6, 16. September 2026 — Christians Überarbeitung von v0.5 eingearbeitet (Sub-Headline, «drei bis sechs Monate», Transkriptions-Satz gestrichen, fünf vorgeschlagene Fragen); Umstellung von Sie auf Du; neuer Ein-Satz «Hier bist Du richtig»; Sub-Headline in Christians Worten ersetzt die drei Kurzangaben, die in eine neue FAQ zu Empfehlung/Einladung gewandert sind; FAQs zu Vertraulichkeit und zu Coachees ausserhalb der Wirtschaft.*
 
 ---
 
@@ -119,6 +119,9 @@ Coaches, die mit wenigen Coachees arbeiten und in die Tiefe gehen: Rich Litvin u
 
 **Hast Du noch einen Hauptjob?**
 Christian hat seine eigene Coaching-Praxis aufgebaut, der er sich zu hundert Prozent widmet. Es ist sein Hauptjob. Bis vor Kurzem führte er das Abo-Geschäft des grössten Medienhauses der Schweiz.
+
+**Gibt es Referenzen oder Stimmen von Coachees?**
+Ja — einige stehen auf dieser Seite, direkt unter diesem Gespräch. Sie erscheinen nur mit Vornamen, denn Diskretion hat oberste Priorität. Für alles Weitere schreib Christian direkt.
 
 **Braucht es eine Empfehlung oder Einladung, um mit Christian zu arbeiten?**
 Normalerweise schon, aber eine feste Regel ist es nicht: Wer einen anderen Weg hierher gefunden hat, sollte ihm trotzdem schreiben. Ein paar Zeilen dazu, wer Du bist und womit Du konfrontiert bist, genügen; er liest und beantwortet alles selbst. Die Sitzungen finden auf Deutsch, Englisch oder Französisch statt, remote oder persönlich.

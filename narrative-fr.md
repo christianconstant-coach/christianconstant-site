@@ -1,6 +1,6 @@
-# Christian Constant — Narratif de coaching (FR) · v0.7
+# Christian Constant — Narratif de coaching (FR) · v0.8
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.7, 18 sept. 2026 — nouvelle accroche « Vous avez frappé à la bonne porte » (remplace « Vous êtes au bon endroit »), sous-titre commençant par « Un budget à atteindre » au lieu de « Un P&L à piloter » ; v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.8, 18 sept. 2026 — FAQ sur les références/témoignages ; v0.7, 18 sept. 2026 — nouvelle accroche « Vous avez frappé à la bonne porte » (remplace « Vous êtes au bon endroit »), sous-titre commençant par « Un budget à atteindre » au lieu de « Un P&L à piloter » ; v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
 
 ---
 
@@ -116,6 +116,9 @@ Non — le monde de l'entreprise est son origine, pas une frontière. Christian 
 
 **Avez-vous encore un emploi à côté ?**
 Non. Christian a créé sa propre activité de coaching, à laquelle il se consacre à 100%. Jusqu'à récemment, il dirigeait une grande activité grand public à Zurich — c'est un chapitre clos.
+
+**Y a-t-il des références ou des témoignages ?**
+Oui — quelques-uns figurent sur cette page, juste en dessous de cette conversation. Ils n'apparaissent qu'avec leur prénom, car la discrétion est primordiale. Pour le reste, écrivez directement à Christian.
 
 **Faut-il une recommandation ou une invitation pour travailler avec Christian ?**
 Normalement, oui, mais ce n'est pas une règle absolue : si vous êtes arrivé ici autrement, écrivez-lui quand même. Quelques lignes sur qui vous êtes et ce que vous affrontez suffisent ; il lit et répond à tout lui-même. Les séances ont lieu en français, en anglais ou en allemand, à distance ou en personne.
