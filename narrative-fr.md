@@ -1,16 +1,16 @@
-# Christian Constant — Narratif de coaching (FR) · v0.9
+# Christian Constant — Narratif de coaching (FR) · v1.0
 
-*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v0.9, 19 sept. 2026 — sous-titre à la première personne (« Je connais cela … c'est tout l'objet de mon coaching ») ; accroche d'en-tête « Coaching sur-mesure de dirigeants » ; v0.8, 18 sept. 2026 — FAQ sur les références/témoignages ; v0.7, 18 sept. 2026 — nouvelle accroche « Vous avez frappé à la bonne porte » (remplace « Vous êtes au bon endroit »), sous-titre commençant par « Un budget à atteindre » au lieu de « Un P&L à piloter » ; v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
+*Document vivant. Il est deux choses à la fois : les mots du site, et la matière à partir de laquelle l'assistant répond en français. Tout ce qui s'y trouve doit être vrai, dans la voix de Christian, et pouvoir être dit tel quel de l'autre côté d'une table. Vouvoiement. v1.0, 6 oct. 2026 — relecture de Christian : nouvelle accroche « C'est ici que ça commence » (remplace « Vous avez frappé à la bonne porte »), « la vie dont on veut profiter », section « Le but » retravaillée (ralentir pour reprendre son envol, narratif bloquant, syndrome de l'imposteur), « un succès qui rend seul », FAQ « Pourquoi travailler avec Christian ? » adoucie ; v0.9, 19 sept. 2026 — sous-titre à la première personne (« Je connais cela … c'est tout l'objet de mon coaching ») ; accroche d'en-tête « Coaching sur-mesure de dirigeants » ; v0.8, 18 sept. 2026 — FAQ sur les références/témoignages ; v0.7, 18 sept. 2026 — nouvelle accroche « Vous avez frappé à la bonne porte » (remplace « Vous êtes au bon endroit »), sous-titre commençant par « Un budget à atteindre » au lieu de « Un P&L à piloter » ; v0.6, 16 septembre 2026 — relecture de Christian (v0.5) intégrée : sous-titre retravaillé, accompagnement « trois à six mois », mention de la transcription retirée, cinq questions suggérées, « Par où commencer ? ». Accroche « Vous êtes au bon endroit » ; FAQ sur la recommandation/invitation.*
 
 ---
 
 ## Une phrase
 
-Vous avez frappé à la bonne porte
+C'est ici que ça commence
 
 ## Sous-titre
 
-Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.
+Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie dont on veut profiter. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.
 
 ## Pourquoi je coache
 
@@ -26,7 +26,7 @@ Je coache parce que je sais être cette personne pour un nombre restreint de cli
 
 ## Avec qui je travaille
 
-Des personnes qui portent souvent une vraie responsabilité : CEO, directeurs généraux, fondateurs, dirigeants en charge d'un P&L, d'un pays, d'un produit, d'une équipe de plusieurs centaines de personnes. Généralement à un point d'inflexion — un rôle plus grand, une entreprise qui cherche à se réinventer, une décision sans cesse repoussée, un succès qui, curieusement, n'a pas le goût du succès.
+Des personnes qui portent souvent une vraie responsabilité : CEO, directeurs généraux, fondateurs, dirigeants en charge d'un P&L, d'un pays, d'un produit, d'une équipe. Généralement à un point d'inflexion — un rôle plus grand, une entreprise qui cherche à se réinventer, une décision sans cesse repoussée, un succès qui, curieusement, rend seul et parfois donne un sentiment d'imposture.
 
 Je travaille en anglais, en allemand et en français, avec des personnes partout dans le monde — depuis Zurich et en ligne.
 
@@ -34,7 +34,7 @@ Je prends un nombre limité de clients à la fois. Pas comme argument marketing 
 
 ## Le but
 
-Je vous aiderai à prendre la ou les décisions qui vous soucient depuis un certain temps. Vous cesserez de fonctionner sur un même narratif sur vous-même, souvent dépassé. Et vous le ferez plus vite et avec plus d'audace que seul — parce que le coach en face de vous a dirigé comme vous, présenté devant des conseils d'administration, embauché et licencié des collaborateurs et collaboratrices, et sait aussi que la vraie conversation, quand il s'agit d'ultra-performance, est souvent ailleurs.
+Je vous aiderai à ralentir pour mieux prendre ou reprendre votre envol. Vous cesserez de fonctionner sur un même narratif bloquant sur vous-même, souvent dépassé. Vous vous débarrasserez d'un éventuel syndrome de l'imposteur. Et vous le ferez plus vite et avec plus d'audace que seul — parce que le coach en face de vous a dirigé comme vous, présenté devant des conseils d'administration, embauché et licencié des collaborateurs et collaboratrices, et sait aussi que le vrai problème, quand il s'agit d'ultra-performance, est souvent ailleurs.
 
 Je n'ai pas de processus standard. Je fais du sur-mesure. Je vous promets toute mon attention, ma franchise et mon expérience — et de ne jamais vous dire uniquement ce que vous voulez entendre.
 
@@ -103,7 +103,7 @@ Christian suit dès septembre 2026 la formation du renommé Co-Active Training I
 Le cœur du travail est en tête-à-tête. Du travail d'équipe occasionnellement, quand il découle d'un accompagnement existant.
 
 **Pourquoi travailler avec Christian ?**
-Parce qu'il a occupé le siège où vous êtes — P&L, équipes, investisseurs, technologies qui bousculent — et qu'il sait que rien de tout cela n'est la vraie conversation. Il apporte deux choses à la fois : un mentor qui l'a fait, et un coach qui vous aide à voir clair, à décider et à rester farouchement vous-même en le faisant. Peu de clients, du sur-mesure, et il ne vous dira jamais uniquement ce que vous voulez entendre.
+Parce qu'il a occupé le siège où vous êtes — P&L, équipes, investisseurs, technologies qui bousculent. Il apporte deux choses à la fois : un mentor qui a vécu des situations souvent similaires, et un coach qui vous aide à voir clair, à décider sereinement et à rester farouchement vous-même en le faisant. Peu de clients, du sur-mesure, et il ne vous dira jamais uniquement ce que vous voulez entendre.
 
 **Quels types de coaching Christian propose-t-il ?**
 Que vous souhaitiez ouvrir le prochain chapitre de votre carrière, grandir sur le plan personnel ou traverser une transition complexe — professionnelle, personnelle ou les deux — Christian conçoit un accompagnement individuel, sur mesure, adapté à vos besoins précis. Plus rarement, il coache aussi des groupes ou des équipes, par exemple une équipe de direction au complet. Le point de départ reste toujours une personne, jamais une organisation.
@@ -143,8 +143,8 @@ Christian est convaincu que chacun porte beaucoup de potentiel inexploité ou bl
 ## Textes du site (interface, français) — à relire
 
 - En-tête : **Christian Constant** · Coaching sur-mesure de dirigeants · choix de langue EN / DE / FR
-- Accroche (dans l'image sur mobile, à côté sur ordinateur) : *Vous avez frappé à la bonne porte*
-- Sous-titre : *Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.*
+- Accroche (dans l'image sur mobile, à côté sur ordinateur) : *C'est ici que ça commence*
+- Sous-titre : *Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie dont on veut profiter. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.*
 - Premier message de l'assistant : *Je suis l'assistant de Christian — pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.*
 - Questions suggérées : *Quels types de coaching Christian propose-t-il ?* · *Pourquoi travailler avec Christian ?* · *Avec qui travaille-t-il ?* · *Combien ça coûte ?* · *Par où commencer ?*
 - Ligne de relance : *Souhaitez-vous en savoir plus ?*
@@ -153,4 +153,4 @@ Christian est convaincu que chacun porte beaucoup de potentiel inexploité ou bl
 - Si l'assistant est indisponible : *L'assistant est momentanément indisponible. Écrivez directement à Christian : hello@christian-constant.com — il lit et répond à tout lui-même.*
 - Pied de page : hello@christian-constant.com · LinkedIn · Mentions légales · Confidentialité · © 2026
 - Mentions légales : *Christian Constant, Altenhofstrasse 45, 8008 Zurich, Suisse. hello@christian-constant.com. Responsable du contenu : Christian Constant.*
-- Confidentialité : *Ce site n'a ni comptes, ni cookies, ni outils d'analyse. La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse et n'est pas conservé ensuite par ce site. Ne partagez rien de confidentiel ici — c'est à cela que sert la conversation avec Christian. Questions sur vos données : hello@christian-constant.com.*
+- Confidentialité : *Ce site n'a ni comptes ni cookies. Les visites sont comptées de manière anonyme – seulement la date et la langue, sans adresse IP, appareil ni localisation. La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse. Les questions et les réponses sont conservées de manière anonyme – sans adresse IP, appareil ni localisation – afin que Christian puisse améliorer l'assistant. Ne partagez rien de confidentiel ici – c'est à cela que sert la conversation avec Christian. Questions sur vos données : hello@christian-constant.com.*

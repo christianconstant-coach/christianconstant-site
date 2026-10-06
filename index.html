@@ -368,7 +368,7 @@
       imprintTitle: "Imprint",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zurich, Switzerland</p><p>" + EMAIL + "</p><p>Responsible for content: Christian Constant.</p>",
       privacyTitle: "Privacy",
-      privacyBody: "<p>This site has no accounts, no cookies and no analytics.</p><p>The conversation on this page is answered by an AI assistant. What you type is sent to Anthropic (USA) to generate the reply. Questions and answers are kept anonymously — without IP address, device or location — so that Christian can improve the assistant. Please don't share anything confidential here — that is what the conversation with Christian is for.</p><p>Questions about your data: " + EMAIL + ".</p>"
+      privacyBody: "<p>This site has no accounts and no cookies. Page views are counted anonymously — only the date and the page language, no IP address, device or location.</p><p>The conversation on this page is answered by an AI assistant. What you type is sent to Anthropic (USA) to generate the reply. Questions and answers are kept anonymously — without IP address, device or location — so that Christian can improve the assistant. Please don't share anything confidential here — that is what the conversation with Christian is for.</p><p>Questions about your data: " + EMAIL + ".</p>"
     },
     de: {
       name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
@@ -386,12 +386,12 @@
       imprintTitle: "Impressum",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zürich, Schweiz</p><p>" + EMAIL + "</p><p>Verantwortlich für den Inhalt: Christian Constant.</p>",
       privacyTitle: "Datenschutz",
-      privacyBody: "<p>Diese Seite hat keine Konten, keine Cookies und keine Analyse-Tools.</p><p>Das Gespräch auf dieser Seite beantwortet ein KI-Assistent. Was Du eingibst, wird zur Erzeugung der Antwort an Anthropic (USA) übermittelt. Fragen und Antworten werden anonym gespeichert – ohne IP-Adresse, Gerät oder Standort –, damit Christian den Assistenten verbessern kann. Bitte teile hier nichts Vertrauliches – dafür ist das Gespräch mit Christian da.</p><p>Fragen zu Deinen Daten: " + EMAIL + ".</p>"
+      privacyBody: "<p>Diese Seite hat keine Konten und keine Cookies. Seitenaufrufe werden anonym gezählt – nur Datum und Sprache, ohne IP-Adresse, Gerät oder Standort.</p><p>Das Gespräch auf dieser Seite beantwortet ein KI-Assistent. Was Du eingibst, wird zur Erzeugung der Antwort an Anthropic (USA) übermittelt. Fragen und Antworten werden anonym gespeichert – ohne IP-Adresse, Gerät oder Standort –, damit Christian den Assistenten verbessern kann. Bitte teile hier nichts Vertrauliches – dafür ist das Gespräch mit Christian da.</p><p>Fragen zu Deinen Daten: " + EMAIL + ".</p>"
     },
     fr: {
       name: "Christian Constant", tagline: "Coaching sur-mesure de dirigeants",
-      hero: "Vous avez frappé à la bonne porte",
-      sub: "Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie qu'on veut savourer. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.",
+      hero: "C'est ici que ça commence",
+      sub: "Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie dont on veut profiter. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.",
       placeholder: "Demandez comment Christian procède…",
       askLabel: "Votre question", send: "Envoyer",
       note: "Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.",
@@ -404,7 +404,7 @@
       imprintTitle: "Mentions légales",
       imprintBody: "<p>Christian Constant<br>Altenhofstrasse 45<br>8008 Zurich, Suisse</p><p>" + EMAIL + "</p><p>Responsable du contenu : Christian Constant.</p>",
       privacyTitle: "Confidentialité",
-      privacyBody: "<p>Ce site n'a ni comptes, ni cookies, ni outils d'analyse.</p><p>La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse. Les questions et les réponses sont conservées de manière anonyme – sans adresse IP, appareil ni localisation – afin que Christian puisse améliorer l'assistant. Ne partagez rien de confidentiel ici – c'est à cela que sert la conversation avec Christian.</p><p>Questions sur vos données : " + EMAIL + ".</p>"
+      privacyBody: "<p>Ce site n'a ni comptes ni cookies. Les visites sont comptées de manière anonyme – seulement la date et la langue, sans adresse IP, appareil ni localisation.</p><p>La conversation sur cette page est prise en charge par un assistant IA. Ce que vous écrivez est transmis à Anthropic (États-Unis) pour générer la réponse. Les questions et les réponses sont conservées de manière anonyme – sans adresse IP, appareil ni localisation – afin que Christian puisse améliorer l'assistant. Ne partagez rien de confidentiel ici – c'est à cela que sert la conversation avec Christian.</p><p>Questions sur vos données : " + EMAIL + ".</p>"
     }
   };
 
@@ -655,5 +655,19 @@
   $("#legalClose").addEventListener("click", function () { legal.hidden = true; });
 
   applyLang(pickLang());
+
+  // Anonymous page-view count: the page language only (the server adds the hour). Skipped in the
+  // preview, and in any browser where the site was opened once with ?me=1 (?me=0 switches it back on).
+  (function countVisit() {
+    if (DEMO) return;
+    try {
+      var m = /[?&]me=([01])/.exec(location.search);
+      if (m) { if (m[1] === "1") localStorage.setItem("notrack", "1"); else localStorage.removeItem("notrack"); }
+      if (localStorage.getItem("notrack") === "1") return;
+    } catch (e) {}
+    try {
+      fetch("/api/visit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ lang: lang }), keepalive: true }).catch(function () {});
+    } catch (e) {}
+  })();
 })();
 </script>
