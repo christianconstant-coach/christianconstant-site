@@ -67,6 +67,37 @@ async function logAnswer(db, id, answer) {
   } catch (e) { console.error("answer log failed", e && e.message); }
 }
 
+// ---- anonymous page-view count (same D1 database, table visits) ----
+// One row per page load: the hour (UTC, rounded down) and the page language. Nothing else is
+// stored — no IP address, no user agent, no identifier. Obvious bots are not counted.
+const BOT_UA = /bot|crawl|spider|slurp|headless|lighthouse|python|curl|wget|httpclient|monitor/i;
+let visitsReady = null;
+function ensureVisits(db) {
+  if (!visitsReady) {
+    visitsReady = db.prepare("CREATE TABLE IF NOT EXISTS visits (id INTEGER PRIMARY KEY AUTOINCREMENT, visited_at TEXT NOT NULL, lang TEXT NOT NULL)").run()
+      .catch((e) => { visitsReady = null; throw e; });
+  }
+  return visitsReady;
+}
+export async function onVisitPost({ request, env, ctx }) {
+  const done = new Response(null, { status: 204, headers: { "Cache-Control": "no-store" } });
+  const origin = request.headers.get("Origin") || "";
+  if (env.ALLOWED_ORIGIN && origin !== env.ALLOWED_ORIGIN) return done;
+  if (BOT_UA.test(request.headers.get("User-Agent") || "")) return done;
+  const db = env.QUESTIONS;
+  if (!db) return done;
+  let lang = "en";
+  try { const b = await request.json(); if (["en", "de", "fr"].includes(b.lang)) lang = b.lang; } catch { /* keep en */ }
+  ctx.waitUntil((async () => {
+    try {
+      await ensureVisits(db);
+      await db.prepare("INSERT INTO visits (visited_at, lang) VALUES (?1, ?2)")
+        .bind(new Date().toISOString().slice(0, 13) + ":00Z", lang).run();
+    } catch (e) { console.error("visit log failed", e && e.message); }
+  })());
+  return done;
+}
+
 function json(status, obj) {
   return new Response(JSON.stringify(obj), { status, headers: { "Content-Type": "application/json" } });
 }
