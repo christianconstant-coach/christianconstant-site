@@ -151,7 +151,7 @@ Christian ist überzeugt, dass in jedem Menschen viel ungenutztes oder blockiert
 - Erste Nachricht des Assistenten: *Ich bin Christians Assistent — nicht Christian. Frag mich, wie er arbeitet, mit wem, und wie es weitergeht. Das echte Gespräch findet mit ihm statt.*
 - Vorgeschlagene Fragen: *Welche Art von Coaching bietet Christian an?* · *Warum mit Christian arbeiten?* · *Mit wem arbeitet er?* · *Was kostet das?* · *Wie fängt es an?*
 - Nachfrage-Zeile: *Möchtest Du mehr wissen?*
-- Eingabefeld: *Frag, wie Christian arbeitet …*
+- Eingabefeld: *Stell Deine Frage* (mit blinkendem Unterstrich)
 - Hinweis unter dem Chat: *Das ist ein Assistent, nicht Christian. Das echte Gespräch findet mit ihm statt.*
 - Wenn der Assistent nicht erreichbar ist: *Der Assistent ist kurz nicht erreichbar. Schreib Christian direkt: hello@christian-constant.com — er liest und beantwortet alles selbst.*
 - Fusszeile: hello@christian-constant.com · LinkedIn · Impressum · Datenschutz · © 2026

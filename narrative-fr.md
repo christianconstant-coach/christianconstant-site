@@ -148,7 +148,7 @@ Christian est convaincu que chacun porte beaucoup de potentiel inexploité ou bl
 - Premier message de l'assistant : *Je suis l'assistant de Christian — pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.*
 - Questions suggérées : *Quels types de coaching Christian propose-t-il ?* · *Pourquoi travailler avec Christian ?* · *Avec qui travaille-t-il ?* · *Combien ça coûte ?* · *Par où commencer ?*
 - Ligne de relance : *Souhaitez-vous en savoir plus ?*
-- Champ de saisie : *Demandez comment Christian procède…*
+- Champ de saisie : *Posez votre question* (avec un tiret bas clignotant)
 - Note sous la conversation : *Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.*
 - Si l'assistant est indisponible : *L'assistant est momentanément indisponible. Écrivez directement à Christian : hello@christian-constant.com — il lit et répond à tout lui-même.*
 - Pied de page : hello@christian-constant.com · LinkedIn · Mentions légales · Confidentialité · © 2026

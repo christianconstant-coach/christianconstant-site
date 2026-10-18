@@ -173,7 +173,7 @@
   .msg.assistant .body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .cursor { display: inline-block; width: 0.5em; height: 1em; background: var(--accent); vertical-align: -0.15em; margin-left: 0.1em; animation: blink 1s steps(2) infinite; }
   @keyframes blink { to { opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .cursor, .hint .bl { animation: none; } }
 
   .prompts {
     display: flex; flex-wrap: wrap; gap: 0.5rem;
@@ -195,10 +195,21 @@
   .followup .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
   form.ask {
-    display: flex; align-items: flex-end; gap: 0.6rem;
-    border-top: 1px solid var(--line);
-    padding: 0.8rem 0.9rem 0.8rem 1.4rem;
+    display: flex; align-items: center; gap: 0.5rem; position: relative;
+    margin: 0.3rem 1.4rem 1.2rem;
+    border: 1.5px solid var(--line); border-radius: 16px;
+    padding: 0.72rem 0.5rem 0.72rem 1rem;
+    cursor: text;
+    transition: border-color 140ms ease;
   }
+  form.ask:focus-within { border-color: var(--accent); }
+  .hint {
+    position: absolute; left: 1rem; right: 3.4rem; top: 50%; transform: translateY(-50%);
+    display: flex; align-items: center; gap: 0.12em;
+    color: var(--muted); pointer-events: none; white-space: nowrap; overflow: hidden;
+  }
+  .hint .bl { animation: blink 1.05s steps(2) infinite; }
+  form.ask.typing .hint { display: none; }
   form.ask textarea {
     flex: 1; resize: none; border: 0; background: transparent; color: var(--ink);
     font: inherit; line-height: 1.45; padding: 0.35rem 0; max-height: 8rem;
@@ -263,13 +274,13 @@
     .thread { max-height: min(60vh, 38rem); padding: 1.8rem 2rem 0.6rem; }
     .msg { max-width: 70ch; }
     .prompts { padding: 0.6rem 2rem 1.2rem; }
-    form.ask { padding-left: 2rem; }
+    form.ask { margin-left: 2rem; margin-right: 2rem; }
   }
 
   @media (max-width: 480px) {
     .hero { padding: 2rem 0 1.6rem; }
     .thread, .prompts { padding-left: 1rem; padding-right: 1rem; }
-    form.ask { padding-left: 1rem; }
+    form.ask { margin-left: 1rem; margin-right: 1rem; }
     .msg { max-width: 100%; }
     .followup { margin-left: 0; }
   }
@@ -301,7 +312,8 @@
     <div class="prompts" id="prompts"></div>
     <form class="ask" id="ask">
       <label for="q" class="sr-only" style="position:absolute;left:-9999px" data-i18n="askLabel">Your question</label>
-      <textarea id="q" rows="1" placeholder="Ask anything about how Christian works…" data-i18n-placeholder="placeholder" autocomplete="off"></textarea>
+      <textarea id="q" rows="1" autocomplete="off"></textarea>
+      <div class="hint" id="hint" aria-hidden="true"><span data-i18n="placeholder">Ask your own question</span><span class="bl">_</span></div>
       <button type="submit" id="send" aria-label="Send" disabled>
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>
       </button>
@@ -356,7 +368,7 @@
       name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
       hero: "You have come to the right place",
       sub: "Budgets to meet. Teams to grow and, sometimes, to shrink. Technology that keeps shifting. Investors to answer to. And a life you still want to enjoy. I have sat in that seat. My work is helping you be great at all of it — and fiercely true to yourself.",
-      placeholder: "Ask anything about how Christian works…",
+      placeholder: "Ask your own question",
       askLabel: "Your question", send: "Send",
       note: "This is an assistant, not Christian. The real conversation happens with him.",
       imprint: "Imprint", privacy: "Privacy", close: "Close", testimonials: "Selected testimonials",
@@ -374,7 +386,7 @@
       name: "Christian Constant", tagline: "Tailor-Made Leadership Coaching",
       hero: "Hier bist Du richtig",
       sub: "Budgets einhalten. Teams aufbauen – und manchmal abbauen. Technologien, die immer neue Ufer erreichen. Investoren. Das Leben, das man in vollen Zügen geniessen will. Ich kenne das. Wie Du das meisterst und dabei kompromisslos Du selbst bleibst: darum geht es in meinem Coaching.",
-      placeholder: "Frag, wie Christian arbeitet …",
+      placeholder: "Stell Deine Frage",
       askLabel: "Deine Frage", send: "Senden",
       note: "Das ist ein Assistent, nicht Christian. Das echte Gespräch findet mit ihm statt.",
       imprint: "Impressum", privacy: "Datenschutz", close: "Schliessen", testimonials: "Ausgewählte Stimmen",
@@ -392,7 +404,7 @@
       name: "Christian Constant", tagline: "Coaching sur-mesure de dirigeants",
       hero: "C'est ici que ça commence",
       sub: "Un budget à atteindre. Des équipes à faire grandir – et parfois à réduire. Des technologies qui transforment. Des attentes de toutes parts. Et la vie dont on veut profiter. Je connais cela. Vous faire briller tout en restant farouchement fidèle à vous-même : c'est tout l'objet de mon coaching.",
-      placeholder: "Demandez comment Christian procède…",
+      placeholder: "Posez votre question",
       askLabel: "Votre question", send: "Envoyer",
       note: "Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.",
       imprint: "Mentions légales", privacy: "Confidentialité", close: "Fermer", testimonials: "Témoignages choisis",
@@ -562,6 +574,14 @@
     return T[lang].demoFallback;
   }
 
+  function syncHint() { form.classList.toggle("typing", document.activeElement === q || q.value.length > 0); }
+  q.addEventListener("focus", syncHint);
+  q.addEventListener("blur", syncHint);
+  form.addEventListener("mousedown", function (e) {
+    if (e.target === q || send.contains(e.target)) return;
+    e.preventDefault(); q.focus();
+  });
+
   function setBusy(b) { busy = b; send.disabled = b || !q.value.trim(); q.disabled = b; }
 
   function submit(text, promptIndex) {
@@ -637,6 +657,7 @@
   q.addEventListener("input", function () {
     send.disabled = busy || !q.value.trim();
     q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, 128) + "px";
+    syncHint();
   });
   q.addEventListener("keydown", function (e) {
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submit(q.value); }
