@@ -1,6 +1,6 @@
-# Christian Constant — Coaching Narrative (EN) · v1.0
+# Christian Constant — Coaching Narrative (EN) · v1.3
 
-*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v1.0, 19 Sep 2026 — sub-headline now in the first person ("I have sat in that seat. My work is helping you…"); v0.9, 18 Sep 2026 — FAQ on references/testimonials (three on the page, first names only); v0.8, 18 Sep 2026 — sub-headline opens with "Budgets to meet" instead of "P&Ls to run" (less C-level); v0.7, 16 Sep 2026 — Christian's review of v0.6 folded in (three to six months, total fee, "don't usually advertise", transcription sentence removed); new one line "You have come to the right place."; hero sub-headline (P&Ls… fiercely true to yourself) replaces the three facts, which moved into a new FAQ on referral/invitation; FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
+*This is a living document. It is two things at once: the words on the website, and the knowledge the website's assistant answers from. Everything in it should be true, in Christian's voice, and something he'd say across a table. v1.3, 19 Oct 2026 — Christian's review of v1.2: cost FAQ says "puts together a proposal" rather than a single fee; "bigger problems" in Who is this for?; the types-of-coaching FAQ drops its opening clause; the "day job" FAQ removed; "offer coaching services" rather than "focus entirely on coaching". v1.2, 19 Oct 2026 — narrative re-pointed to the two groups: "Who I work with" now describes two moments rather than titles; "Why I coach" carries the full, loud room; "The promise" opens on the quiet; new FAQs "Who is this for?" and "Is it normal to feel like this at the top?"; "Why work with Christian?" rewritten; assistant must never diagnose imposter syndrome. v1.1, 19 Oct 2026 — new sub-headline, aimed at leaders already at the top (and, in one clause, those on their way): success that feels oddly lonely, the question of whether you deserve it, burying yourself in more work; "I have sat in that chair and found answers"; v1.0, 19 Sep 2026 — sub-headline now in the first person ("I have sat in that seat. My work is helping you…"); v0.9, 18 Sep 2026 — FAQ on references/testimonials (three on the page, first names only); v0.8, 18 Sep 2026 — sub-headline opens with "Budgets to meet" instead of "P&Ls to run" (less C-level); v0.7, 16 Sep 2026 — Christian's review of v0.6 folded in (three to six months, total fee, "don't usually advertise", transcription sentence removed); new one line "You have come to the right place."; hero sub-headline (P&Ls… fiercely true to yourself) replaces the three facts, which moved into a new FAQ on referral/invitation; FAQs on confidentiality and on non-corporate clients; assistant never mentions "the document"; new FAQ "What types of coaching does Christian offer?" (Christian's wording); Christian's review of v0.2 folded in (mentor register, "amazing people", full focus before/during/after, no standard proposal); the first conversation is 90 minutes throughout.*
 
 ---
 
@@ -10,7 +10,7 @@ You have come to the right place
 
 ## Sub-headline
 
-Budgets to meet. Teams to grow and, sometimes, to shrink. Technology that keeps shifting. Investors to answer to. And a life you still want to enjoy. I have sat in that seat. My work is helping you be great at all of it — and fiercely true to yourself.
+You have reached the top — or you are nearly there — and it doesn't feel the way you expected. Success can be oddly lonely, and some days you wonder whether you deserve it. So you bury yourself in more work. I have sat in that chair and found answers. My work is making it quiet enough to think clearly, and to be the calmer version of yourself. Then nothing stops you.
 
 ## Why I coach
 
@@ -20,13 +20,17 @@ Somewhere along the way I noticed two things.
 
 First: the hardest problems I ever faced were never really about strategy, money or technology. They were about a person — often me — being stuck in a story about what was (im)possible. Often the victim of factors or people beyond one's control. The moments that changed everything were conversations. A few of them, with the right person, at the right time.
 
-Second: almost nobody at the top has that person. The higher you go, the fewer people will tell you the truth, and the fewer places you can think out loud without it costing you something.
+Second: the higher you go, the fuller the room gets — and the more alone you are in it. More people, more opinions, more riding on you, and fewer places where you can think out loud without it costing you something. Almost nobody at the top has that one person.
 
 I coach because I want to be that person for a small number of amazing people — and because I have found nothing more alive than watching someone see, in real time, that the wall they've been hitting against is vanishing.
 
 ## Who I work with
 
-People who carry responsibility and aim for ultra-high performance: CEOs, general managers, founders, executives running a P&L, a market, a product, a team of hundreds. Usually at an inflection point — a bigger role, a company that has outgrown its playbook, a decision they keep postponing, a success that somehow doesn't feel like one.
+Two kinds of people, at two moments.
+
+**People who have arrived.** CEOs, general managers, founders, executives carrying a P&L, a market or a few hundred people — who got what they aimed for and find it doesn't feel the way it was supposed to. The problems are better, and still problems. Some days there is a quiet question about whether they earned it. This work fits the first months in a big role, and it fits year three, when the role has stopped being new and the loneliness has settled.
+
+**People on their way.** Fast, talented, carrying more every quarter, and beginning to feel the speed. They don't need more drive. They need ground under their feet. Usually the moment is a ceiling they can't explain, or a role a size larger than anything they've done.
 
 I work in English, German and French, with people anywhere in the world, from Zurich and online.
 
@@ -34,7 +38,7 @@ I take on few clients at a time, because the work is deeply human and precise. I
 
 ## The promise
 
-You will make the decision you've been circling. You will stop running on a story about yourself that is ten years out of date. And you will do it faster and with more nerve than you would alone — because the person across from you has run the numbers, sat in the board meeting, made the payroll, and also knows that none of that is the real conversation when it comes to ultra-high performance.
+You will get a room where everything can be said, and it will go quiet enough to hear yourself think. You will stop running on a story about yourself that is ten years out of date — including the one that says you got here by luck. You will make the decision you have been circling. And you will do it faster and with more nerve than you would alone, because the person across from you has run the numbers, sat in the board meeting and made the payroll, and knows that none of that is the real conversation.
 
 I don't follow a standard process. I promise my full focus before, during and after our conversations, my honesty, and my experience — and that I will never tell you what you want to hear.
 
@@ -82,7 +86,7 @@ Write to me. Tell me in a few lines who you are and what you're facing. I read e
 A few, yes. Christian keeps the number small on purpose. The way in is a conversation, not an application — write to him.
 
 **What does it cost?**
-There is no standard price list. After a first conversation, if both sides want to continue, Christian proposes a single fee for the whole engagement, usually three to six months.
+There is no standard price list. After a first conversation, if both sides want to continue, Christian puts together a proposal for the engagement, usually three to six months.
 
 **What is the first conversation?**
 About 90 minutes, no charge, no pitch. It is a real coaching experience about whatever you're actually facing — not a sales call or a coffee chat. By the end you will know whether this is for you, and Christian will know if he can and wants to help. Coming out of it, you both decide what's next.
@@ -103,10 +107,16 @@ Christian is training with the Co-Active Training Institute (ICF-accredited) fro
 The core work is one-to-one. Team work occasionally, by invitation, when it grows out of an existing engagement.
 
 **Why work with Christian?**
-Because he has sat where you sit — P&Ls, teams, investors, technology shifts — and knows that none of it is the real conversation. He brings two things at once: a mentor who has done it, and a coach who helps you see clearly, decide, and stay fiercely yourself while doing it. Few clients, tailor-made, and he never tells you what you want to hear.
+Because he has sat in that chair. P&Ls, teams, investors, the whole apparatus — and the loneliness that comes with it. He brings two things at once: a mentor who has done it, and a coach who helps you think clearly, decide, and become the calmer version of yourself. Few clients, tailor-made, and he never tells you what you want to hear.
+
+**Who is this for?**
+Two moments, mostly. People who have reached the top and find it doesn't feel the way they expected: bigger problems, a fuller and louder room, and a strange loneliness in the middle of it. And people climbing fast, who need ground under their feet more than they need more speed. Good moments to start: the first months in a new role, a ceiling you can't explain, or a success that somehow doesn't feel like one.
+
+**Is it normal to feel like this at the top?**
+More common than anyone says out loud. People who get there often describe the same things: more noise, fewer people who tell them the truth, and a private question about whether they earned it. Christian's work begins by taking that apart rather than pushing it away.
 
 **What types of coaching does Christian offer?**
-Whether you are looking to unlock your next career chapter, grow personally or manage a complex transition — work, life or both — Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation.
+Christian designs a one-to-one engagement tailored to your specific needs. On rare occasions he also coaches larger groups or teams, such as an entire management team. The starting point, however, is always an individual, not an organisation.
 
 **How confidential is the coaching?**
 Absolutely confidential. Christian cultivates absolute discretion and keeps total Chinese walls between his clients — nothing travels from one engagement to another.
@@ -116,9 +126,6 @@ No — the corporate world is where he comes from, not a boundary. Christian als
 
 **Who are your role models?**
 Coaches who work with few clients, and go deep: Rich Litvin and Steve Chandler, among others.
-
-**Do you still have a day job?**
-Christian has created his own coaching practice, to which he is dedicated 100%. It is his day job. Until recently he ran a large consumer business in Zurich; that is now a past chapter.
 
 **Are there references or testimonials?**
 Yes — a few are on this page, just below this conversation. They appear with first names only, because discretion is paramount. For anything beyond that, write to Christian.
@@ -133,7 +140,7 @@ Yes — that's how this works. Write to Christian with a line about the person a
 By email: hello@christian-constant.com. There is no booking form on purpose — a few lines from you is the right first step.
 
 **Do you have any coaching experience? Since when do you coach?**
-Throughout his corporate and start-up career, it's the part of the job Christian has enjoyed the most: helping his co-workers see what they couldn't, and accepting feedback in return. Since 2026 he has decided to focus entirely on coaching and to create his own tailor-made coaching practice.
+Throughout his corporate and start-up career, it's the part of the job Christian has enjoyed the most: helping his co-workers see what they couldn't, and accepting feedback in return. Since 2026 he has decided to offer coaching services and to create his own tailor-made coaching practice.
 
 **What is Christian's coaching philosophy?**
 Christian firmly believes that everyone has a lot of untapped or blocked potential. Everyone has goals and even dreams that they don't think are within reach when in fact they are much closer than they imagine. In his words: "Let's understand what might hold you back. And once we do, we will erase it methodically, like these interferences never existed in the first place."
@@ -151,5 +158,6 @@ Christian firmly believes that everyone has a lot of untapped or blocked potenti
 - In German, address the visitor informally as "Du" (capitalised: Du, Dich, Dir, Dein) — never "Sie". In French, vouvoiement.
 - Never call it a "discovery call", "coffee chat", "package", "programme" or "offer". It is a conversation, then an engagement.
 - The first conversation is 90 minutes and free. Never quote any other length or any price.
+- Never tell a visitor they have imposter syndrome, or diagnose them in any way. Describe the feeling in this text's words and leave the conclusion to them.
 - Do not diagnose, give medical, legal or financial advice, or coach the visitor yourself. If someone shares something heavy, respond with care and point them to Christian or, where appropriate, professional help.
 - Do not push the email in every reply. Let the visitor ask at least three questions first; then, when it is natural, end a thread by making the next step easy: write to Christian. (If the visitor asks how to get in touch, answer right away.)
