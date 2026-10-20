@@ -249,6 +249,8 @@
   .quotes figure { margin: 0; padding-left: 1rem; border-left: 2px solid var(--line); }
   .quotes blockquote { margin: 0; font-family: var(--display); font-size: 1.08rem; line-height: 1.5; color: var(--ink); text-wrap: pretty; }
   .quotes blockquote::before { content: "“"; } .quotes blockquote::after { content: "”"; }
+  html[lang="de"] .quotes blockquote::before { content: "„"; } html[lang="de"] .quotes blockquote::after { content: "“"; }
+  html[lang="fr"] .quotes blockquote::before { content: "«\00a0"; } html[lang="fr"] .quotes blockquote::after { content: "\00a0»"; }
   .quotes figcaption { margin-top: 0.7rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em; color: var(--muted); }
   @media (min-width: 900px) { .quotes { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; align-items: start; } }
 
@@ -325,16 +327,16 @@
     <h2 id="voicesTitle" data-i18n="testimonials">Selected testimonials</h2>
     <div class="quotes">
       <figure>
-        <blockquote>Over time, Christian, you haven’t just taught me strategy and execution — you’ve challenged me to question my assumptions and see the landscape from entirely new perspectives. Thank you for always listening closely, giving honest feedback, and investing in my mindset and professional growth. You didn’t just help me navigate complex problems; you showed me that my highest potential was always just the next milestone.</blockquote>
-        <figcaption>Alen (42), Start-up Founder, Balkans</figcaption>
+        <blockquote data-i18n="v1">Over time, Christian, you haven’t just taught me strategy and execution — you’ve challenged me to question my assumptions and see the landscape from entirely new perspectives. Thank you for always listening closely, giving honest feedback, and investing in my mindset and professional growth. You didn’t just help me navigate complex problems; you showed me that my highest potential was always just the next milestone.</blockquote>
+        <figcaption data-i18n="v1c">Alen (42), Start-up Founder, Balkans</figcaption>
       </figure>
       <figure>
-        <blockquote>Christian has uniquely helped me gain clarity and accountability about what I should focus on — and what not.</blockquote>
-        <figcaption>Christoph (50), CEO in the Trading Industry, Germany</figcaption>
+        <blockquote data-i18n="v2">Christian has uniquely helped me gain clarity and accountability about what I should focus on — and what not.</blockquote>
+        <figcaption data-i18n="v2c">Christoph (50), CEO in the Trading Industry, Germany</figcaption>
       </figure>
       <figure>
-        <blockquote>Christian challenges me to question my assumptions and think through problems from different perspectives. He listens carefully, provides thoughtful guidance and honest feedback, and has made a meaningful impact on my professional development. I highly recommend him as a coach.</blockquote>
-        <figcaption>Jana (37), Head of Operations, Scale-up Tech Company, Switzerland</figcaption>
+        <blockquote data-i18n="v3">Christian challenges me to question my assumptions and think through problems from different perspectives. He listens carefully, provides thoughtful guidance and honest feedback, and has made a meaningful impact on my professional development. I highly recommend him as a coach.</blockquote>
+        <figcaption data-i18n="v3c">Jana (37), Head of Operations, Scale-up Tech Company, Switzerland</figcaption>
       </figure>
     </div>
   </section>
@@ -372,6 +374,12 @@
       askLabel: "Your question", send: "Send",
       note: "This is an assistant, not Christian. The real conversation happens with him.",
       imprint: "Imprint", privacy: "Privacy", close: "Close", testimonials: "Selected testimonials",
+      v1: "Over time, Christian, you haven\u2019t just taught me strategy and execution \u2014 you\u2019ve challenged me to question my assumptions and see the landscape from entirely new perspectives. Thank you for always listening closely, giving honest feedback, and investing in my mindset and professional growth. You didn\u2019t just help me navigate complex problems; you showed me that my highest potential was always just the next milestone.",
+      v1c: "Alen (42), Start-up Founder, Balkans",
+      v2: "Christian has uniquely helped me gain clarity and accountability about what I should focus on \u2014 and what not.",
+      v2c: "Christoph (50), CEO in the Trading Industry, Germany",
+      v3: "Christian challenges me to question my assumptions and think through problems from different perspectives. He listens carefully, provides thoughtful guidance and honest feedback, and has made a meaningful impact on my professional development. I highly recommend him as a coach.",
+      v3c: "Jana (37), Head of Operations, Scale-up Tech Company, Switzerland",
       intro: "I'm Christian's assistant — not Christian. Ask me how he works, who he works with, or what happens next. The real conversation happens with him.",
       prompts: ["What types of coaching does Christian offer?", "Why work with Christian?", "Who does he work with?", "What does it cost?", "How does it start?"],
       more: "Would you like to know more?",
@@ -389,7 +397,13 @@
       placeholder: "Stell Deine Frage",
       askLabel: "Deine Frage", send: "Senden",
       note: "Das ist ein Assistent, nicht Christian. Das echte Gespräch findet mit ihm statt.",
-      imprint: "Impressum", privacy: "Datenschutz", close: "Schliessen", testimonials: "Ausgewählte Stimmen",
+      imprint: "Impressum", privacy: "Datenschutz", close: "Schliessen", testimonials: "Ausgew\u00e4hlte Stimmen",
+      v1: "Mit der Zeit hast Du mir, Christian, nicht nur Strategie und Umsetzung beigebracht \u2013 Du hast mich herausgefordert, meine Annahmen zu hinterfragen und das Ganze aus v\u00f6llig neuen Perspektiven zu sehen. Danke, dass Du immer genau zuh\u00f6rst, ehrlich Feedback gibst und in meine Haltung und meine berufliche Entwicklung investierst. Du hast mir nicht nur geholfen, komplexe Probleme zu bew\u00e4ltigen; Du hast mir gezeigt, dass mein gr\u00f6sstes Potenzial immer nur einen Meilenstein entfernt lag.",
+      v1c: "Alen (42), Start-up-Gr\u00fcnder, Balkan",
+      v2: "Christian hat mir auf einzigartige Weise geholfen, Klarheit und Verbindlichkeit dar\u00fcber zu gewinnen, worauf ich mich konzentrieren sollte \u2013 und worauf nicht.",
+      v2c: "Christoph (50), CEO in der Rohstoffindustrie, Deutschland",
+      v3: "Christian fordert mich heraus, meine Annahmen zu hinterfragen und Probleme aus verschiedenen Perspektiven zu durchdenken. Er h\u00f6rt aufmerksam zu, gibt durchdachte Impulse und ehrliches Feedback und hat meine berufliche Entwicklung sp\u00fcrbar gepr\u00e4gt. Ich kann ihn als Coach sehr empfehlen.",
+      v3c: "Jana (37), Leiterin Operations, Tech-Scale-up, Schweiz",
       intro: "Ich bin Christians Assistent – nicht Christian. Frag mich, wie er arbeitet, mit wem, und wie es weitergeht. Das echte Gespräch findet mit ihm statt.",
       prompts: ["Welche Art von Coaching bietet Christian an?", "Warum mit Christian arbeiten?", "Mit wem arbeitet er?", "Was kostet das?", "Wie fängt es an?"],
       more: "Möchtest Du mehr wissen?",
@@ -407,7 +421,13 @@
       placeholder: "Posez votre question",
       askLabel: "Votre question", send: "Envoyer",
       note: "Ceci est un assistant, pas Christian. La vraie conversation a lieu avec lui.",
-      imprint: "Mentions légales", privacy: "Confidentialité", close: "Fermer", testimonials: "Témoignages choisis",
+      imprint: "Mentions l\u00e9gales", privacy: "Confidentialit\u00e9", close: "Fermer", testimonials: "T\u00e9moignages choisis",
+      v1: "Avec le temps, Christian, vous ne m\u2019avez pas seulement appris la strat\u00e9gie et l\u2019ex\u00e9cution \u2014 vous m\u2019avez pouss\u00e9 \u00e0 remettre en question mes certitudes et \u00e0 voir le paysage sous des angles enti\u00e8rement nouveaux. Merci d\u2019avoir toujours \u00e9cout\u00e9 attentivement, donn\u00e9 un retour honn\u00eate et investi dans mon \u00e9tat d\u2019esprit et ma progression professionnelle. Vous ne m\u2019avez pas seulement aid\u00e9 \u00e0 traverser des probl\u00e8mes complexes ; vous m\u2019avez montr\u00e9 que mon plein potentiel \u00e9tait toujours \u00e0 port\u00e9e de la prochaine \u00e9tape.",
+      v1c: "Alen (42), fondateur de start-up, Balkans",
+      v2: "Christian m\u2019a aid\u00e9, d\u2019une mani\u00e8re unique, \u00e0 y voir clair et \u00e0 m\u2019engager sur ce qui m\u00e9rite mon attention \u2014 et sur ce qui ne la m\u00e9rite pas.",
+      v2c: "Christoph (50), CEO dans l\u2019industrie des mati\u00e8res premi\u00e8res, Allemagne",
+      v3: "Christian me pousse \u00e0 remettre en question mes certitudes et \u00e0 aborder les probl\u00e8mes sous diff\u00e9rents angles. Il \u00e9coute attentivement, offre des conseils r\u00e9fl\u00e9chis et un retour honn\u00eate, et a eu un v\u00e9ritable impact sur mon d\u00e9veloppement professionnel. Je le recommande vivement comme coach.",
+      v3c: "Jana (37), directrice des op\u00e9rations, scale-up tech, Suisse",
       intro: "Je suis l'assistant de Christian – pas Christian. Demandez-moi comment il travaille, avec qui, et ce qui se passe ensuite. La vraie conversation a lieu avec lui.",
       prompts: ["Quels types de coaching Christian propose-t-il ?", "Pourquoi travailler avec Christian ?", "Avec qui travaille-t-il ?", "Combien ça coûte ?", "Par où commencer ?"],
       more: "Souhaitez-vous en savoir plus ?",
