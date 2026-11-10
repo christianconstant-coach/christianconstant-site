@@ -498,6 +498,7 @@
   var busy = false;
   var asked = [];          // indices of standard questions already clicked
   var convo = Math.random().toString(36).slice(2, 10) + Date.now().toString(36); // random per page load; groups one visit's questions, identifies nobody
+  var epoch = 0;           // bumped whenever the conversation is reset, e.g. on a language switch
 
   var $ = function (s) { return document.querySelector(s); };
   var thread = $("#thread"), prompts = $("#prompts"), form = $("#ask"), q = $("#q"), send = $("#send");
@@ -511,6 +512,7 @@
   }
 
   function applyLang(l) {
+    var switching = l !== lang;
     lang = l;
     try { localStorage.setItem("lang", l); } catch (e) {}
     document.documentElement.lang = l;
@@ -520,8 +522,18 @@
     send.setAttribute("aria-label", t.send);
     document.querySelectorAll(".langs button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === l)); });
     document.title = t.name;
+    // A half-translated thread reads as a bug, and the old turns would keep pulling
+    // the assistant back into the previous language, so a switch starts over.
+    if (switching || !history.length) resetChat(); else renderPrompts();
+  }
+
+  function resetChat() {
+    epoch++;
+    history = []; asked = [];
+    thread.innerHTML = "";
+    addMsg("assistant", T[lang].intro, true);
     renderPrompts();
-    if (!history.length) { thread.innerHTML = ""; addMsg("assistant", t.intro, true); }
+    setBusy(false);
   }
 
   function renderPrompts() {
@@ -607,6 +619,7 @@
   function submit(text, promptIndex) {
     text = (text || "").trim();
     if (!text || busy) return;
+    var myEpoch = epoch;
     if (typeof promptIndex === "number" && asked.indexOf(promptIndex) < 0) asked.push(promptIndex);
     var old = thread.querySelector(".followup"); if (old) old.remove();
     addMsg("user", text);
@@ -620,7 +633,7 @@
     if (DEMO) {
       var a = demoAnswer(text);
       setTimeout(function () {
-        typeInto(body, a, function () { history.push({ role: "assistant", content: a }); addFollowups(); setBusy(false); q.focus(); });
+        typeInto(body, a, function () { if (myEpoch !== epoch) return; history.push({ role: "assistant", content: a }); addFollowups(); setBusy(false); q.focus(); });
       }, 350);
       return;
     }
@@ -635,6 +648,7 @@
       function pump() {
         return reader.read().then(function (r) {
           if (r.done) {
+            if (myEpoch !== epoch) return;
             body.innerHTML = paragraphs(acc);
             history.push({ role: "assistant", content: acc });
             addFollowups();
@@ -649,6 +663,7 @@
       }
       return pump();
     }).catch(function () {
+      if (myEpoch !== epoch) return;
       var msg = T[lang].offline;
       body.innerHTML = paragraphs(msg);
       history.push({ role: "assistant", content: msg });
